@@ -4,7 +4,6 @@ height: 20px;
 }
 
 
-
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
 
 
