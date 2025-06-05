@@ -2,6 +2,16 @@
 	width: 20px!important;
 	height: 20px!important;
 }
+
+
+.detpage input[type=checkbox], .detpage input[type=radio]
+Specificity: (0,2,1)
+ {
+    margin: 20px;
+    border: 20px;
+    border-width: 0px !important;
+}
+
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
 
 
