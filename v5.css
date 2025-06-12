@@ -1,9 +1,25 @@
 /*--------------------------------Increase size of checkbox ---------------------------------- */
 
 .fieldarea-field input[type="checkbox"] {
-width: 20px;
-height: 20px;
+width: 30px;
+height: 30px;
 }
+
+input[type="checkbox"] {
+      appearance: none; /* Remove default checkbox styling */
+      -webkit-appearance: none; /* For WebKit browsers */
+      width: 30px;
+      height: 30px;
+      background-color: var(--SKFRoyalBlue); /* Default background color */
+      border: 2px solid #ccc;
+      border-radius: 4px; /* Optional: rounded corners */
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color:var(--SKFLightBlue);; /* Green when checked */
+      border-color: var(--SKFRoyalBlue);; /* Optional: border color changes */
+    }
 /*--------------------------------Records image ---------------------------------- */
 
 .no-records-container {
