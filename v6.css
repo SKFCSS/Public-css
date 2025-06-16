@@ -320,7 +320,7 @@ margin-top: 22px!important;
 }
 /* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW- END ------------------------------- */
 
-/* -------------------------------Column Header Wrapping - START------------------------------- */
+/* -------------------------------Column Header Wrapping - START----------------------
 .datagrid .dropdown {
 display: flex;
 flex-direction: row;
@@ -337,7 +337,7 @@ max-height: unset !important;
 white-space: normal !important;
 }
 
-/* -------------------------------Column Header Wrapping - END -------------------------------*/
+-----------------Column Header Wrapping - END -------------------------------*/
 
 /*-------------------------------SCROLL BAR - START -------------------------------*/
 
