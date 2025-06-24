@@ -89,6 +89,7 @@ height: 30px;
 --SKFLightGrey: #e5e5e5;
 --SKFGreen: #009e2d;
 --SKFRed: #f93434;
+  --SKFInstructions: #f0f7fb;
 }
 
 
@@ -725,7 +726,7 @@ font-size: 16px;
 
 div.instructions
 {
-background-color: var(--SKFLightBlue);
+background-color: var(--SKFInstructions);
 border-left: solid 4px var(--SKFRoyalBlue);
 line-height: 18px;
 overflow: hidden;
