@@ -6,16 +6,16 @@
 
 /*--------------------------------Color Selector ---------------------------------- */
 :root {
---SKFRoyalBlue: #0000fe;
+--SKFRoyalBlue: #0070c0;
 --SKFWhite: #ffffff;
---SKFLightBlue: #ccdcff;
+--SKFLightBlue: #fff;
 --SKFYellow: #fdf6bf;
 --SKFBlack: #000000;
 --SKFGrey: #b2b2b2;
---SKFLightGrey: #e5e5e5;
+--SKFLightGrey: #fefefe;
 --SKFGreen: #009e2d;
 --SKFRed: #f93434;
-  --SKFInstructions: #f0f7fb;
+  --SKFInstructions: #0070c0;
 }
 
 
