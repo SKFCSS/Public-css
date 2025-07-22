@@ -281,7 +281,7 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 }
-
+.detpage[data-viewmode="View"] .fieldarea-field,
 .detpage[data-viewmode="Edit"] .fieldarea-field,
 .detpage[data-viewmode="Create"] .fieldarea-field {
 background-color: #fafafa;
