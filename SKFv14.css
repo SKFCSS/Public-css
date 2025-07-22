@@ -1,8 +1,6 @@
 /* Detail - Input Component */
 
-.fieldarea-field  input[type=checkbox] {
-    margin: 8px;
-}
+
 
 .fieldarea-field textarea, 
 .fieldarea-field input,
@@ -44,43 +42,6 @@
 }
 
 
-.detpage .fieldarea-caption {
-    margin-top: 4px;
-}
-
-.detpage .fieldarea-field {
-    text-align: left;
-    vertical-align: top;
-    float: right;
-    outline: 1px solid #dce4e5;
-    border-radius: 8px;
-}
-
-.fieldarea-field > div {
-    padding: 8px;
-    background-color: #f9f9f9;
-    width: 100%;
-    min-height: 16px;
-}
-
-.fieldHint {
-    order: 50;
-}
-
-.fieldarea-field,
-.datetime-picker {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 8px;
-    align-items: center;
-}
-
-
-.detpage .fieldarea-row {
-    margin-right: 0 !important;
-    line-height: unset !important;
-}
 
 
 
