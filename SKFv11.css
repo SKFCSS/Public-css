@@ -1,45 +1,4 @@
-.detpage .fieldarea-caption .caption-wrapper {
-    min-height: unset !important;
-}
 
-
-.detpage .fieldarea-caption {
-    margin-top: 4px;
-}
-
-.detpage .fieldarea-field {
-    text-align: left;
-    vertical-align: top;
-    float: right;
-    outline: 1px solid #dce4e5;
-    border-radius: 8px;
-}
-
-.fieldarea-field > div {
-    padding: 8px;
-    background-color: #f9f9f9;
-    width: 100%;
-    min-height: 16px;
-}
-
-.fieldHint {
-    order: 50;
-}
-
-.fieldarea-field,
-.datetime-picker {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 8px;
-    align-items: center;
-}
-
-
-.detpage .fieldarea-row {
-    margin-right: 0 !important;
-    line-height: unset !important;
-}
 
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
 
@@ -329,13 +288,30 @@ background-color: #fafafa;
 cursor: not-allowed;
 }
 
+.detpage .fieldarea-caption {
+    margin-top: 4px;
+}
+
 .detpage .fieldarea-field {
-display: flex;
+text-align: left;
+    vertical-align: top;
+    float: right;
+    display: flex;
 flex-wrap: nowrap;
 gap: 10px;
-border-radius: 4px;
+border-radius: 6px;
 outline: 1px solid var(--SKFGrey) ;
 min-height: 18px;
+
+}
+
+.detpage .fieldarea-row {
+    margin-right: 0 !important;
+    line-height: unset !important;
+}
+
+.fieldHint {
+    order: 50;
 }
 
 select[multiple='multiple'] {
