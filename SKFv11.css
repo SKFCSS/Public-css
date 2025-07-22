@@ -270,6 +270,10 @@ background-color: var(--SKFYellow);
 /*------------------------- FIELD AREA - START -------------------------------*/
 .fieldarea-field > div,
 .entitySelectorGroup > div {
+  padding: 8px;
+    background-color:var(--LightGrey);
+    width: 100%;
+    min-height: 16px;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
