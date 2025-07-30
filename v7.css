@@ -96,7 +96,12 @@ outline: 3px solid var(--SKFRoyalBlue); !important;
 /*-------------------------------BUTTON COLOR - END -------------------------------*/
 
 /*-------------------------------DETAIL MENU BUTTONS WHEN HOVER OVER - START-------------------------------*/
-.menu-action-links input:hover, .menu-action-links a:hover , .links_container a:hover, .grid-action-links a:hover{
+.menu-action-links input:hover, .menu-action-links a:hover , .links_container a:hover, .grid-action-links a:hover, input[name='save_action_link'] a:hover,
+input[name='save_exit_action_link'] a:hover,
+input[name='save_add_new_action_link'] a:hover,
+#save_action_link a:hover,
+#save_exit_action_link a:hover,
+#save_add_new_action_link a:hover,{
 color: var(--SKFBlack)!important;
 background-color: var(--SKFYellow)!important;
 outline: 3px solid var(--SKFRoyalBlue); !important;
