@@ -1,23 +1,23 @@
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
 Specificity: (0,2,2)
  {
-    height: 28px;
-    width: 100%;
-    padding: 0 25px 0 10px;
+    height: 28px!important;
+    width: 100%!important;
+    padding: 0 25px 0 10px!important;
     color: #262626 !important;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif!important;
     font-size: 11px !important;
     font-weight: 400 !important;
     line-height: 24px;
     letter-spacing: 0.15px;
-    background: white;
+    background: white!important;
     border-color: #bdc3c7!important;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: thin;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    border-radius: 2px!important;
+    border-style: solid!important;
+    border-width: thin!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
 }
 
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
@@ -165,7 +165,7 @@ font-family: "Open Sans", sans-serif;
 font-size: 12px;
 font-weight: normal;
 padding: 10px;
-border: 0;
+
 }
 /*--------------------------------Header Inventory Columns ---------------------------------- */
 div.dropdown_container a {
