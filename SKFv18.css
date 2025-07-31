@@ -1,0 +1,577 @@
+/* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
+
+/*--------------------------------Color Selector ---------------------------------- */
+:root {
+--SKFRoyalBlue: #0070c0;
+--SKFWhite: #ffffff;
+--SKFLightBlue: #fff;
+--SKFYellow: #fdf6bf;
+--SKFBlack: #000000;
+--SKFGrey: #b2b2b2;
+--SKFLightGrey: #fefefe;
+--SKFGreen: #009e2d;
+--SKFRed: #f93434;
+  --SKFInstructions: #0070c0;
+}
+
+
+/*--------------------------------------------------------------------INVENTORY VIEWS ----------------------------------------------------------------- */
+
+
+
+/*--------------------------------Tab Colour Text ---------------------------------- */
+.app-tabs ul li.selected-tab>a,
+.app-tabs ul li a:hover {
+border: none;
+color: var(--SKFRoyalBlue); !important;
+
+}
+
+/*--------------------------------Tab Colour Text ---------------------------------- */
+
+.app-tabs ul li a
+{
+border: none;
+color: var(--SKFBlack);
+}
+
+/*--------------------------------Inventory Row Text ---------------------------------- */
+.inventory-row td.data-cell, .map-wrapper td.data-cell, .detpage .inventory-row td.data-cell {
+color: var(--SKFBlack); !important;
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+font-weight: normal;
+padding: 10px;
+border: 0;
+}
+/*--------------------------------Header Inventory Columns ---------------------------------- */
+div.dropdown_container a {
+color: var(--SKFBlack); !important;
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+font-weight: 600;
+text-decoration: none;
+}
+
+/* --------------------------GRID AND INVENTORY TABLES HEADER COLOUR - START --------------------------*/
+table.links, .detpage .links, .links_container {
+
+background: var(--SKFLightGrey)!important;
+border-width: 1px 1px 0 1px;
+border-style: solid;
+
+border-color: var(--SKFLightGrey)!important;
+}
+
+/* --------------------------GRID AND INVENTORY TABLES HEADER COLOUR - END --------------------------*/
+
+
+
+/*------------------------------- INVENTORY VIEW - COLUMN FILTER - START -------------------------------*/
+
+.header_wrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+table.links {
+background-image:none!important;
+}
+
+.datagrid .td_sorting .tool-tip {
+margin-left: 0!important;
+}
+
+
+.datagrid .td_sorting .dropdown_container {
+margin-right: 0 !important;
+}
+
+.filterBox {
+margin: 0 !important;
+background-color: var(--SKFLightGrey)!important;
+color: var(--SKFBlack)!important;
+border: 0 !important;
+border-radius: 4px !important;
+
+}
+
+input.filterBox {
+
+background-image: url(https://static.intelex.com/Version/6.6.9.0/Content/Themes/Material/images/Search.png) !important;
+background-repeat: no-repeat !important;
+background-position-y: 50% !important;
+background-position-x: 4px !important;
+padding-left: 20px !important;
+background-size: 12px !important;
+}
+
+/*---------------------- INVENTORY VIEW - COLUMN FILTER- END ------------------------------ */
+
+
+/* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW - START -------------------------------*/
+
+#customInventory_right {
+display: none;
+}
+
+.header-wrapper-inventory.custom-inventory-raven {
+margin-top: 22px!important;
+}
+/* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW- END ------------------------------- */
+
+/* -------------------------------Column Header Wrapping - START-----------------------------*/
+.datagrid .dropdown {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+gap: 2px;
+}
+
+.datagrid thead tr.header {
+max-height: unset !important;
+}
+
+.datagrid .dropdown a:link {
+white-space: normal !important;
+}
+
+/* ------------------------Column Header Wrapping - END -------------------------------*/
+
+/*-------------------------------SCROLL BAR - START -------------------------------*/
+
+* {
+scrollbar-width: 10PX;
+scrollbar-color: var(--SKFRoyalBlue)var(--SKFGrey);
+}
+
+*::-webkit-scrollbar-track {
+background-color: var(--SKFWhite);
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: var(--SKFRoyalBlue);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+background-color: var(--SKFYellow);
+}
+
+/*------------------------------- SCROLL BAR - END-------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------------------------DETAIL VIEWS --------------------------------------------------------------------------------- */
+
+
+/*------------------------- FIELD AREA - START -------------------------------*/
+.fieldarea-field > div,
+.entitySelectorGroup > div {
+  padding: 8px;
+    background-color:var(--LightGrey);
+    width: 100%;
+    min-height: 16px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.detpage .field-area {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.detpage[data-viewmode="View"] .fieldarea-field,
+.detpage[data-viewmode="Edit"] .fieldarea-field,
+.detpage[data-viewmode="Create"] .fieldarea-field {
+background-color: #fafafa;
+cursor: not-allowed;
+}
+
+.detpage .fieldarea-caption {
+    margin-top: 4px;
+}
+
+.detpage .fieldarea-field {
+text-align: left;
+    vertical-align: top;
+    float: right;
+    display: flex;
+flex-wrap: nowrap;
+gap: 10px;
+border-radius: 6px;
+outline: 1px solid var(--SKFGrey) ;
+min-height: 18px;
+
+}
+
+.detpage .fieldarea-row {
+    margin-right: 0 !important;
+    line-height: unset !important;
+}
+
+.fieldHint {
+    order: 50;
+}
+
+select[multiple='multiple'] {
+width: 80% !important;
+}
+/* -------------------------FIELD AREA - END-------------------------------*/
+
+
+
+/*------------------------------- ENTITY SELECT - BUTTONS MADE TO ICONS INSTEAD OF WORDS - START ------------------------------- */
+
+.entitySelectorGroup {
+color: var(--SKFWhite);
+font-size: 0;
+}
+
+.entityselector-selectLink:before, .entityselector-clearLink:before, .entityselector-assignToMeLink:before {
+font-family: FontAwesome;
+font-size: 18px;
+color: var(--SKFRoyalBlue);
+padding: 5px;
+}
+
+.entityselector-selectLink:before {
+content: "\f002";
+}
+
+.entityselector-clearLink:before {
+content: "\f05c";
+}
+
+.entityselector-selectLink, .entityselector-clearLink{
+font-size: 0 !important;
+}
+
+.entityselector-selectLink:hover:before, .entityselector-clearLink:hover:before,.entityselector-assignToMeLink:before {
+background-color: var(--SKFYellow);
+outline: 0px solid var(--SKFYellow);
+border-radius: 0px;
+}
+/*------------------------------- ENTITY SELECT - BUTTONS MADE TO ICONS INSTEAD OF WORDS - END ------------------------------- */
+
+/* -------------------------------BREADCRUMBS - DEFINED AND UNDERLINED ON THE DETAIL VIEW - START -------------------------------*/
+
+.detpage .breadcrumbs {
+
+padding-bottom: 8px;
+}
+
+.breadcrumbs a {
+color:var(--SKFRoyalBlue)!important;
+
+padding: 2px 0;
+font-size: 12px !important;
+border-bottom: 2px solid var(--SKFRoyalBlue) !important;
+}
+
+.breadcrumbs a:hover {
+background-color: var(--SKFYellow);
+border-radius: 2px;
+outline: 1px solid var(--SKFYellow);
+}
+/*------------------------------- BREADCRUMBS - DEFINED AND UNDERLINED ON THE DETAIL VIEW - END-------------------------------*/
+/* ------------------------------- DETAIL VIEW - SECTIONS- START------------------------------- */
+
+.tabs-section.ui-tabs .ui-tabs-panel {
+padding:0 !important;
+padding-bottom: 0 !important;
+}
+
+.tabs-section > .secbase, .secbase > .secbase, .ui-tabs-panel > .secbase {
+margin-bottom: 0 !important;
+
+}
+
+.secbase .links_container {
+line-height: inherit!important;
+}
+
+
+ul.tabs-section {
+margin-top: 13px!important;
+
+
+background-color: transparent!important;
+border-bottom: 1px solid var(--SKFGrey);!important;
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: flex-start;
+}
+/* ------------------------------- DETAIL VIEW - SECTIONS- END ------------------------------- */
+
+
+
+/* -------------------------------HEADERS AND MENUS DISPLAY FIELD - START-------------------------------*/
+.detpage .menu-top-container .main {
+border:none !important;
+}
+.detpage .menu-top-container-float {
+background-color: var(--SKFWhite)!important;
+padding-bottom: 10px;
+}
+
+
+.detpage .header .main .title-container .text {
+color: var(--SKFRoyalBlue)!important;
+font-size: 25px;
+font-weight: normal;
+}
+/*------------------------------- HEADERS AND MENUS DISPLAY FIELD - END-------------------------------*/
+
+
+/* ------------------------------- DETAIL VIEW - GROUP SECTIONS WITH A BORDER AND HIGHLIGHT SECTION TITLE- START------------------------------- */
+li.tabs-section {
+
+
+background-color: var(--SKFWhite)!important;
+border: 1px solid var(--SKFGrey)!important;
+height: 36px;
+display: flex;
+align-items: center;
+position: relative!important;
+}
+
+
+li.ui-tabs-active {
+top: 1px!important;
+background-color: var(--SKFWhite)!important;
+border-top: var(--SKFRoyalBlue)
+3px solid!important;
+}
+/* ------------------------------- DETAIL VIEW - GROUP SECTIONS WITH A BORDER AND HIGHLIGHT SECTION TITLE- END------------------------------- */
+
+/*------------------------------- SECTIONS ON DETAIL PAGE - START-------------------------------*/
+
+.tabs-section.ui-tabs .ui-tabs-panel {
+padding: 0 !important;
+padding-bottom: 0 !important;
+}
+
+.tabs-section>.secbase,
+.secbase>.secbase,
+.ui-tabs-panel>.secbase {
+margin-bottom: 0 !important;
+
+}
+
+ul.tabs-section {
+margin-top: 13px !important;
+
+
+background-color: transparent !important;
+border-bottom: 1px solid var(--SKFBlack)!important;
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: flex-start;
+}
+
+
+li.tabs-section {
+
+
+background-color: var(--SKFWhite) !important;
+border: 1px solidvar(--SKFBlack)!important;
+height: 36px;
+display: flex;
+align-items: center;
+position: relative !important;
+}
+
+
+li.ui-tabs-active {
+
+top: 1px !important;
+background-color: var(--SKFWhite)!important;
+border-top: #var(--SKFBlack) 3px solid !important;
+}
+
+.content>.secbase,
+.content>#commentsSection>.secbase {
+padding-left: 5px;
+border: solid;
+border-width: 1px 1px 1px 3px;
+border-color: var(--SKFRoyalBlue)!important;
+box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+margin-top: 20px;
+}
+
+.secbase.secbase-raven>.header .main>.trigger {
+margin-right: 10px;
+}
+
+.secbase.secbase-raven>.header .main>.title-container {
+border: none !important;
+}
+
+.detpage .header .main,
+.secbase>.content,
+.secbase.secbase-raven>.footer>.main {
+background-color: transparent !important;
+}
+
+.secbase.closed>.header {
+height: 48px !important;
+}
+
+.secbase.secbase-raven>.header .main>.title-container .text {
+color: var(--SKFBlack) !important;
+}
+
+.detpage .fieldarea-caption .caption-wrapper {
+color: var(--SKFBlack)!important;
+font-weight: 400 !important;
+min-height: auto !important;
+}
+
+.secbase.secbase-raven .content .header {
+margin-left: auto !important;
+}
+
+
+
+/*-------------------------------- SECTIONS ON DETAIL PAGE - END--------------------------------*/
+
+
+
+
+/*------------------------------------------------- INLINE EDIT - START -------------------------------------------------*/
+
+.inline-edit, .popup-edit {
+background-color: var(--SKFLightGrey);
+border: 1px dotted var(--SKFLightBlue) !important;
+}
+
+.inventory-row td.data-cell.wrap {
+white-space: normal !important;
+}
+
+#inLineEditForm {
+padding:0px !important;
+}
+
+#inLineEditForm .fieldarea-field input[type="text"] {
+width: auto!important;
+}
+
+#inLineEditForm .fieldarea-row {
+margin-right: 0 !important;
+}
+
+#inLineEditForm .fieldarea-field select, .fieldarea-field select[multiple] {
+width: auto!important;
+}
+
+/*------------------------------------------------- INLINE EDIT - END -------------------------------------------------*/
+
+
+/*-------------------------------------------------------------WORKFLOW DIAGRAM --------------------------------------------------------------- */
+
+/*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - START -------------------------------- */
+.wfDiagram > div > div[selected='blue'] {
+border: 2px solid var(--SKFRoyalBlue);
+background-color: var(--SKFRoyalBlue);
+color: var(--SKFWhite);
+}
+/*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - END -------------------------------- */
+
+/* --------------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - START --------------------------------*/
+.wffixed{
+position: fixed;
+top: 160px;
+left: 0;
+width: 100%;
+z-index: 2;
+
+}
+
+.wfDiagram > div > div {
+width: 180px;
+text-align: center;
+padding: 6px 2px;
+font-weight: bold;
+border-radius: 8px;
+border: 2px solid var(--SKFRoyalBlue);
+background-color: var(--SKFWhite);
+color: var(--SKFBlack);
+}
+
+
+
+.wfDiagram > div > div[selected='red'] {
+border: 2px solidvar(--SKFRoyalBlue)!important;
+background-color: var(--SKFRed)!important;
+color: var(--SKFWhite)!important;
+}
+
+.wfDiagram > div > div[selected='green'] {
+border: 2px solid var(--SKFRoyalBlue)!important;
+background-color: var(--SKFGreen)!important;
+color: var(--SKFWhite)!important;
+}
+.wffixed{
+position: fixed;
+top: 12.8rem;
+left: 0;
+width: 100%;
+z-index: 2;
+
+}
+
+.wfDiagram {
+width:100%;
+text-align:center;
+}
+/* --------------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
+/*--------------------------------Workflow PR/DD Fields ---------------------------------- */
+.workflow-status-area span {
+color: var(--SKFRoyalBlue); !important;
+font-family: "Open Sans", sans-serif;
+font-size: 13px;
+font-weight: normal;
+}
+.workflow-status-area strong {
+color: var(--SKFBlack);
+font-family: "Open Sans", sans-serif;
+font-size: 12px;
+font-weight: 600;
+}
+
+
+/*--------------------------------Records image ---------------------------------- */
+
+.no-records-container {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #004C8F;
+    padding-bottom: 0px;
+}
+
+.no-records-image {
+    margin-bottom: 100px;
+    max-width: 100%;
+    height: 75px !important;
+    width: 100px !important;
+}
