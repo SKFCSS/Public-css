@@ -289,7 +289,7 @@ background-color: var(--SKFYellow);
 
 .fieldarea-field input,
 .fieldarea-field select {
-    height: auto !important;
+    height: unset !important;
 }
 
 .detpage .fieldarea-field{
