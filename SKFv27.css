@@ -1,4 +1,24 @@
-
+.inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
+Specificity: (0,2,2)
+ {
+    height: 28px;
+    width: 100%;
+    padding: 0 25px 0 10px;
+    color: #262626 !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    background: white;
+    border-color: #bdc3c7;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: thin;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
 
