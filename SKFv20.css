@@ -269,6 +269,48 @@ background-color: var(--SKFYellow);
 
 /*---------------------------------------------------------------------------------------------DETAIL VIEWS --------------------------------------------------------------------------------- */
 
+/* Detail - Input Component */
+
+
+
+.fieldarea-field textarea, 
+.fieldarea-field input,
+.fieldarea-field select {
+    border-radius: 8px !important;
+    box-sizing: border-box;
+    border: 1px solid  var(--SKFRoyalBlue)!important;
+    padding: 8px;
+}
+
+.fieldarea-field input,
+.fieldarea-field select {
+    height: unset !important;
+}
+
+.detpage .fieldarea-field{
+    padding-top: unset !important;
+}
+
+.fieldarea-field textarea,
+.fieldarea-field select,
+.fieldarea-field input[type="text"] {
+    width: 100%!important;
+}
+
+.fieldarea-field select[name$="Timezone"] {
+    width: auto!important;
+    margin-right: 8px;
+}
+
+.fieldarea-field input[type="text"], 
+.fieldarea-field input[type="password"] {
+    height: unset!important;
+    line-height: unset!important;
+}
+
+.detpage .fieldarea-caption .caption-wrapper {
+    min-height: unset !important;
+}
 
 /*------------------------- FIELD AREA - START -------------------------------*/
 .fieldarea-field > div,
