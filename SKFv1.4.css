@@ -67,46 +67,14 @@ background-image:none!important;
 /*-------------------------------BUTTON SHAPE - END-------------------------------*/
 
 /*------------------------------- BUTTON COLOR- START -------------------------------*/
-.menu-action-links .exit-link,
-.inventory-actions .dropdown_text,
-.link,
-.grid-action-links input,
-.grid-action-links a,
-.gridCreateLink,
-a.gridCreateLink,
-.grid-attach-link,
-a.grid-attach-link,
-a.gridAttachLink,
-input[name='save_action_link'],
+
+.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a,input[name='save_action_link'],
 input[name='save_exit_action_link'],
 input[name='save_add_new_action_link'],
-input[name='submit_action_link'],
 #save_action_link,
-#submit_action_link,
 #save_exit_action_link,
-#save_add_new_action_link,
-#Cancel-link,
-.gridCreateMultiLink,
-a.gridDeleteLink,
-a.gridDetachLink,
-a.gridDetachLink,
-.archiveLink,
-gridArchiveLink,
-a.gridArchiveLink,
-deleteLink,
-a.deleteLink,
-.gridListAllLink,
-.gridAdvancedSearchLink,
-.menu-action-links .cloneLink,
-a.securityActionLink,
-a.auditActionLink,
-.menu-action-links a.actionlLink,
-.grid-action-links a.actionlLink,
-.menu-action-links a.gridExecuteActionLink,
-.grid-action-links a.gridExecuteActionLink,
-.menu-action-links .edit-link,
-.menu-action-links .cancel-link
-{
+#save_add_new_action_link{
+ 
 background-color: var(--SKFLightBlue)!important;
 color: var(--SKFBlack)!important;
 outline: 3px solid var(--SKFRoyalBlue); !important;
