@@ -453,7 +453,7 @@ font-size: 0 !important;
 
 .entityselector-selectLink:hover:before, .entityselector-clearLink:hover:before,.entityselector-assignToMeLink:before {
 background-color: var(--SKFYellow);
-outline: 0px solid var(--SKFYellow);
+outline: 3px solid var(--SKFYellow);
 border-radius: 0px;
 }
 /*------------------------------- ENTITY SELECT - BUTTONS MADE TO ICONS INSTEAD OF WORDS - END ------------------------------- */
