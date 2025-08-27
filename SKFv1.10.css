@@ -40,14 +40,9 @@ Specificity: (0,2,2)
 
 /*------------------------------- BUTTON SHAPE - START -------------------------------*/
 .grid-action-links input, .grid-action-links a, .wf-link , .inventory-actions .dropdown_text
-.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a,input[name='save_action_link'],
-input[name='save_exit_action_link'],
-input[name='save_add_new_action_link'],
-input[name='save_send_email_action_link'],
-input[name='save_send_email_action_link'],
-#save_action_link,
-#save_exit_action_link,
-#save_add_new_action_link{
+.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a
+
+{
 
  
 padding: 7px 8px !important;
