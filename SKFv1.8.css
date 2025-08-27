@@ -317,8 +317,7 @@ background-color: var(--SKFYellow);
     margin-right: 8px;
 }
 
-.fieldarea-field input[type="text"], 
-.fieldarea-field input[type="password"] ,
+.fieldarea-field input[type="text"], ,
 .fieldarea-field input[type="checkbox"] {
 width: 30px;
 height: 30px;
