@@ -40,8 +40,8 @@ Specificity: (0,2,2)
 
 /*------------------------------- BUTTON SHAPE - START -------------------------------*/
 .grid-action-links input, .grid-action-links a, .wf-link , .inventory-actions .dropdown_text
-.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a
-
+.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a,
+.detpage .menu-action-links input 
 {
 
  
@@ -57,7 +57,7 @@ background-image:none!important;
 
 /*DETAIL MENU BUTTONS PADDING*/
 
-.menu-action-links input, .menu-action-links a {
+.menu-action-links input, .menu-action-links a, .detpage .menu-action-links input  {
 padding: 7px 8px;!important;
 padding-left: 10px !important;
 padding-right: 10px !important;
@@ -453,7 +453,7 @@ font-size: 0 !important;
 
 .entityselector-selectLink:hover:before, .entityselector-clearLink:hover:before,.entityselector-assignToMeLink:before {
 background-color: var(--SKFYellow);
-outline: 3px solid var(--SKFYellow);
+outline: 0px solid var(--SKFYellow);
 border-radius: 0px;
 }
 /*------------------------------- ENTITY SELECT - BUTTONS MADE TO ICONS INSTEAD OF WORDS - END ------------------------------- */
