@@ -43,6 +43,8 @@ Specificity: (0,2,2)
 .menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a,input[name='save_action_link'],
 input[name='save_exit_action_link'],
 input[name='save_add_new_action_link'],
+input[name='save_send_email_action_link'],
+input[name='save_send_email_action_link'],
 #save_action_link,
 #save_exit_action_link,
 #save_add_new_action_link{
