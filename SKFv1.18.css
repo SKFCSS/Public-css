@@ -101,7 +101,7 @@ Specificity: (0,2,2)
 
 .menu-action-links a:hover, 
 .menu-action-links input:hover {
-    background-color: var(--button-hover-color);
+    background-color: var(--SKFYellow);
 }
 
 
