@@ -9,7 +9,9 @@
     */
 }
 
-.grid-action-links a {
+.grid-action-links input, .grid-action-links a, .wf-link , .inventory-actions .dropdown_text
+.menu-action-links input, .menu-action-links a , .links_container a, .grid-action-links a,
+.detpage .menu-action-links input  {
     padding: 8px 10px!important;
     border-width: 2px!important;
     border-style:  solid!important;
@@ -29,9 +31,10 @@ a.gridCreateLink,
 a.createNewTaskLink,
 a.gridLinkBuilder,
 .ui-widget-content a.gridCreateLink {
-    color: #FFF;
-    background-color: #004c8f;
-    border-color: #004c8f;
+ background-color: var(--SKFLightBlue)!important;
+color: var(--SKFBlack)!important;
+  border-color: var(--SKFLightBlue);
+
 }
 
 a.gridCreateLink::before, 
