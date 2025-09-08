@@ -1,118 +1,89 @@
-.detpage .menu-action-links .inventory-actions .dropdown_text:hover,
-.grid-action-links a:hover
-{
- color:var(--SKFYellow);
- text-decoration:none
+/*--------------------------------BUTTONS - START ---------------------------------- */
+.menu-action-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-right: 80px!important; /* to leave space for the gear, print, popup icon */
 }
 
-.grid-action-links .createNewTaskLink:hover,
-.grid-action-links .gridCreateLink:hover,
-.grid-action-links .grid-attach-link:hover,
-.grid-action-links .gridAttachLink:hover,
-.grid-action-links .gridLinkBuilder:hover
-{
- color:var(--SKFYellow);
- text-decoration:none
+
+@media (max-width: 768px) {
+    .menu-action-links {
+        padding-right: 0!important;
+    }
+
+    .detpage .fieldarea-field {
+        width: 100% !important;
+    }
+    
+    .detpage .menu-action-links a, 
+    .detpage .menu-action-links input {
+        font-size: 13px;
+    }
 }
 
-.detpage .menu-action-links>span,
 .detpage .menu-action-links a,
-.detpage .menu-action-links input
-{
- font-family:"Open Sans",
- sans-serif;
- font-size:16px;
- margin-right:0px;
- padding-right:0;
- padding-left:0;
- color:#004c8f
+.detpage .menu-action-links a.edit-link,
+.detpage .menu-action-links input {
+
+    margin-right: 0;
+    border: 2px solid rgb(0, 76, 143);
+    padding: 8px 10px!important;
+    border-radius: 21px;
+    background-image: none !important;
+    color: rgb(0, 76, 143);
+    font-size: 15px;
+    font-weight: 600;
 }
 
-#SendSelected,
-.grid-action-links .gridSystemLink,
-.grid-action-links .reassignTasksLink,
-.grid-action-links .gridHierarchyTreeLink,
-.grid-action-links .gridListAllLink,
-.grid-action-links .gridAdvancedSearchLink,
-.grid-action-links .gridDeleteLink,
-.grid-action-links .gridSampleMergeTemplateLink,
-.grid-action-links .createNewTaskLink,
-.grid-action-links .gridCreateLink,
-.grid-action-links .grid-attach-link,
-.grid-action-links .grid-detach-link,
-.grid-action-links .gridAttachLink,
-.grid-action-links .gridDetachLink,
-.grid-action-links .gridRestoreLink,
-.grid-action-links .releaseDocumentLink,
-.grid-action-links .gridLinkBuilder,
-.ui-widget-content .grid-action-links .gridSystemLink,
-.ui-widget-content .grid-action-links .reassignTasksLink,
-.ui-widget-content .grid-action-links .gridHierarchyTreeLink,
-.ui-widget-content .grid-action-links .gridListAllLink,
-.ui-widget-content .grid-action-links .gridAdvancedSearchLink,
-.ui-widget-content .grid-action-links .gridDeleteLink,
-.ui-widget-content .grid-action-links .gridSampleMergeTemplateLink,
-.ui-widget-content .grid-action-links .createNewTaskLink,
-.ui-widget-content .grid-action-links .gridCreateLink,
-.ui-widget-content .grid-action-links .grid-attach-link,
-.ui-widget-content .grid-action-links .grid-detach-link,
-.ui-widget-content .grid-action-links .gridAttachLink,
-.ui-widget-content .grid-action-links .gridDetachLink,
-.ui-widget-content .grid-action-links .gridRestoreLink,
-.ui-widget-content .grid-action-links .releaseDocumentLink,
-.ui-widget-content .grid-action-links .gridLinkBuilder,
-.default .ui-widget-content .grid-action-links .gridSystemLink,
-.default .ui-widget-content .grid-action-links .reassignTasksLink,
-.default .ui-widget-content .grid-action-links .gridHierarchyTreeLink,
-.default .ui-widget-content .grid-action-links .gridListAllLink,
-.default .ui-widget-content .grid-action-links .gridAdvancedSearchLink,
-.default .ui-widget-content .grid-action-links .gridDeleteLink,
-.default .ui-widget-content .grid-action-links .gridSampleMergeTemplateLink,
-.default .ui-widget-content .grid-action-links .createNewTaskLink,
-.default .ui-widget-content .grid-action-links .gridCreateLink,
-.default .ui-widget-content .grid-action-links .grid-attach-link,.default .ui-widget-content .grid-action-links .grid-detach-link,
-.default .ui-widget-content .grid-action-links .gridAttachLink,
-.default .ui-widget-content .grid-action-links .gridDetachLink,
-.default .ui-widget-content .grid-action-links .gridRestoreLink,
-.default .ui-widget-content .grid-action-links .releaseDocumentLink,
-.default .ui-widget-content .grid-action-links .gridLinkBuilder,
-.header-wrapper-inventory.custom-inventory-raven a,
-.detpage .menu-action-links .inventory-page .header-wrapper .header-options>a,
-.page-header-link,
-.page-header.header-links .dropdown_text
-{
- padding-left:29px;
- background-size:24px 24px;
- background-repeat:no-repeat;
- background-position:0
+.detpage .menu-action-links a::before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    margin-right: 5px;
+    font-size: 20px;
 }
 
-
-.header-wrapper-inventory.custom-inventory-raven a,
-.detpage .menu-action-links .inventory-page .header-wrapper .header-options>a,
-.page-header.header-links .gridPrintLink,
-.page-header-link,.page-header.header-links .dropdown_text
-{
- margin-left:15px;
- height:24px;
- width:24px;
- overflow:hidden
+.detpage .menu-action-links a.archiveLink {
+    color: var(--SKFRed); !important;
+    border-color: var(--SKFRed); !important;
 }
 
-
-.header-wrapper-inventory.custom-inventory-raven a,
-.detpage .menu-action-links .inventory-page .header-wrapper .header-options>a,.page-header-link,
-.page-header.header-links .dropdown_text
-{
- padding:0;
- display:inline-block;
- color:rgba(0,0,0,0)
+.detpage .menu-action-links a#workflow-add-comment img {
+    display: none;
 }
 
-.page-header.header-links
-{
- margin:20px 0 0 0
+.detpage .menu-action-links a#workflow-add-comment::before {
+    content: "\f0e5"; /* fa-comment-alt */
 }
+
+.detpage .menu-action-links a.archiveLink::before {
+    content: "\f187"; /* fa-archive */
+}
+
+.detpage .menu-action-links a.edit-link::before {
+    content: "\f040"; /* fa-edit */
+}
+
+.detpage .menu-action-links a.cancelLink::before {
+    content: "\f00d"; /* fa-times */
+}
+
+.detpage .menu-action-links a.exit-link::before {
+    content: "\f08b";
+}
+
+.detpage .menu-action-links a.securityActionLink::before {
+    content: "\f023"; /* fa-shield-alt */
+}
+
+.menu-action-links a:hover, 
+.menu-action-links input:hover {
+    background-color: var(--SKFYellow);
+}
+
+/*--------------------------------BUTTONS - END ---------------------------------- */
 
 /*-------------------------------------*/
 
