@@ -82,8 +82,8 @@ table.links {
 }
 
 .detpage .menu-action-links a.archiveLink {
-    color: #8d1624 !important;
-    border-color: #8d1624 !important;
+    color:  var(--SKFRed); !important;
+    border-color: var(--SKFRed); !important;
 }
 
 .detpage .menu-action-links a#workflow-add-comment img {
@@ -168,8 +168,8 @@ a.gridDetachLink,
 a.gridArchiveLink,
 a.grid-detach-link,
 a.gridRemoveMergeLink {
-    color: #8d1624;
-    border-color: #8d1624;
+    color: var(--SKFRed);
+    border-color: var(--SKFRed);
 }
 
 a.gridDeleteLink::before,
@@ -243,14 +243,14 @@ Specificity: (0,2,2)
     height: 28px!important;
     width: 100%!important;
     padding: 0 25px 0 10px!important;
-    color: #262626 !important;
+    color: var(--ILXLightGrey); !important;
     font-family: "Open Sans", sans-serif!important;
     font-size: 11px !important;
     font-weight: 400 !important;
     line-height: 24px;
     letter-spacing: 0.15px;
     background: white!important;
-    border-color: #bdc3c7!important;
+    border-color: var(--ILXLightGrey);!important;
     border-radius: 2px!important;
     border-style: solid!important;
     border-width: thin!important;
@@ -274,11 +274,13 @@ Specificity: (0,2,2)
 --SKFGrey: #b2b2b2;
 --SKFLightGrey: #fefefe;
 --SKFGreen: #009e2d;
---SKFRed: #f93434;
+--SKFRed: #8d1624;
   --SKFInstructions: #f0f7fb;
     --ILXNavy: #004c8f;
   --button-border-color: #d7dcde;
     --button-hover-color: #e6e9eb;
+    --ILXLightGrey: #bdc3c7; 
+     --ILXBlack: #262626;  
 }
 
 
@@ -966,7 +968,7 @@ font-weight: 600;
 }
 
 .search-menu__results button[aria-selected=false] span span span span {
-  color: #262626;
+  color:var(--ILXBlack);
 }
 
 
