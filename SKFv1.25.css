@@ -1,3 +1,42 @@
+
+.detpage .menu-top-container .main .menu-action-links {
+  padding-right: 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-left: 1px;
+}
+
+.detpage .menu-top-container .main .menu-action-links a {
+  display: inline-block;
+  color: #004c8f;
+}
+.menu-action-links a {
+  border: 2px solid #004c8f;
+  border-radius: 100px;
+  padding: 8px 18px !important;
+  background-position: left 12px center !important;
+  padding-left: 43px !important;
+  display: flex !important;
+  align-items: center;
+}
+
+.menu-action-links a img {
+  height: 24px;
+  width: 24px;
+  padding-right: 10px;
+}
+
+.menu-action-links a:hover {
+  color: #004c8f;
+}
+
+
 .menu-action-links .inventory-actions .dropdown_text:hover,
 .grid-action-links a:hover {
     color: #004c8f;
