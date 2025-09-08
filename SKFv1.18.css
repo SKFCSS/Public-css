@@ -20,89 +20,6 @@ Specificity: (0,2,2)
     box-sizing: border-box!important;
 }
 
-.menu-action-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    padding-right: 80px!important; /* to leave space for the gear, print, popup icon */
-}
-
-
-@media (max-width: 768px) {
-    .menu-action-links {
-        padding-right: 0!important;
-    }
-
-    .detpage .fieldarea-field {
-        width: 100% !important;
-    }
-    
-    .detpage .menu-action-links a, 
-    .detpage .menu-action-links input {
-        font-size: 13px;
-    }
-}
-
-.detpage .menu-action-links a,
-.detpage .menu-action-links a.edit-link,
-.detpage .menu-action-links input {
-
-    margin-right: 0;
-    border: 2px solid rgb(0, 76, 143);
-    padding: 8px 10px!important;
-    border-radius: 21px;
-    background-image: none !important;
-    color: rgb(0, 76, 143);
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.detpage .menu-action-links a::before {
-    font-family: 'FontAwesome';
-    font-weight: normal;
-    margin-right: 5px;
-    font-size: 20px;
-}
-
-.detpage .menu-action-links a.archiveLink {
-    color: #8d1624 !important;
-    border-color: #8d1624 !important;
-}
-
-.detpage .menu-action-links a#workflow-add-comment img {
-    display: none;
-}
-
-.detpage .menu-action-links a#workflow-add-comment::before {
-    content: "\f0e5"; /* fa-comment-alt */
-}
-
-.detpage .menu-action-links a.archiveLink::before {
-    content: "\f187"; /* fa-archive */
-}
-
-.detpage .menu-action-links a.edit-link::before {
-    content: "\f040"; /* fa-edit */
-}
-
-.detpage .menu-action-links a.cancelLink::before {
-    content: "\f00d"; /* fa-times */
-}
-
-.detpage .menu-action-links a.exit-link::before {
-    content: "\f08b";
-}
-
-.detpage .menu-action-links a.securityActionLink::before {
-    content: "\f023"; /* fa-shield-alt */
-}
-
-.menu-action-links a:hover, 
-.menu-action-links input:hover {
-    background-color: var(--SKFYellow);
-}
 
 
 
@@ -258,7 +175,92 @@ background-color: var(--SKFYellow);
 /*------------------------------- SCROLL BAR - END-------------------------------*/
 
 
+/*--------------------------------BUTTONS - START ---------------------------------- */
+.menu-action-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-right: 80px!important; /* to leave space for the gear, print, popup icon */
+}
 
+
+@media (max-width: 768px) {
+    .menu-action-links {
+        padding-right: 0!important;
+    }
+
+    .detpage .fieldarea-field {
+        width: 100% !important;
+    }
+    
+    .detpage .menu-action-links a, 
+    .detpage .menu-action-links input {
+        font-size: 13px;
+    }
+}
+
+.detpage .menu-action-links a,
+.detpage .menu-action-links a.edit-link,
+.detpage .menu-action-links input {
+
+    margin-right: 0;
+    border: 2px solid rgb(0, 76, 143);
+    padding: 8px 10px!important;
+    border-radius: 21px;
+    background-image: none !important;
+    color: rgb(0, 76, 143);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.detpage .menu-action-links a::before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.detpage .menu-action-links a.archiveLink {
+    color: #8d1624 !important;
+    border-color: #8d1624 !important;
+}
+
+.detpage .menu-action-links a#workflow-add-comment img {
+    display: none;
+}
+
+.detpage .menu-action-links a#workflow-add-comment::before {
+    content: "\f0e5"; /* fa-comment-alt */
+}
+
+.detpage .menu-action-links a.archiveLink::before {
+    content: "\f187"; /* fa-archive */
+}
+
+.detpage .menu-action-links a.edit-link::before {
+    content: "\f040"; /* fa-edit */
+}
+
+.detpage .menu-action-links a.cancelLink::before {
+    content: "\f00d"; /* fa-times */
+}
+
+.detpage .menu-action-links a.exit-link::before {
+    content: "\f08b";
+}
+
+.detpage .menu-action-links a.securityActionLink::before {
+    content: "\f023"; /* fa-shield-alt */
+}
+
+.menu-action-links a:hover, 
+.menu-action-links input:hover {
+    background-color: var(--SKFYellow);
+}
+
+/*--------------------------------BUTTONS - END ---------------------------------- */
 
 /*---------------------------------------------------------------------------------------------DETAIL VIEWS --------------------------------------------------------------------------------- */
 
