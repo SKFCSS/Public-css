@@ -151,8 +151,8 @@ a.createNewTaskLink,
 a.gridLinkBuilder,
 .ui-widget-content a.gridCreateLink {
     color: #FFF;
-    background-color: #004c8f;
-    border-color: #004c8f;
+    background-color:  var(--ILXNavy);
+    border-color: var(--ILXNavy);
 }
 
 a.gridCreateLink::before, 
@@ -194,8 +194,8 @@ a.gridAttachLink,
 a.grid-attach-link,
 a.gridSampleMergeTemplateLink,
 a.gridUploadMergeLink {
-    color: #004c8f !important;
-    border-color: #004c8f !important;
+    color: var(--ILXNavy);!important;
+    border-color: var(--ILXNavy); !important;
     background-color: #FFF;
 }
 
