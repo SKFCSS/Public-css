@@ -1,3 +1,26 @@
+/* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
+
+/*--------------------------------Color Selector ---------------------------------- */
+:root {
+--SKFRoyalBlue: #0070c0;
+--SKFWhite: #ffffff;
+--SKFLightBlue: #fff;
+--SKFYellow: #fdf6bf;
+--SKFBlack: #000000;
+--SKFGrey: #b2b2b2;
+--SKFLightGrey: #fefefe;
+--SKFGreen: #009e2d;
+--SKFRed: #8d1624;
+  --SKFInstructions: #f0f7fb;
+    --ILXNavy: #004c8f;
+  --button-border-color: #d7dcde;
+    --button-hover-color: #fdf6bf;
+    --ILXLightGrey: #bdc3c7; 
+     --ILXBlack: #262626;  
+}
+
+
+/*--------------------------------BUTTONS START---------------------------------- */
 table.links {
     margin-bottom: 10px;
 }
@@ -261,28 +284,7 @@ Specificity: (0,2,2)
 
 
 
-
-/* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
-
-/*--------------------------------Color Selector ---------------------------------- */
-:root {
---SKFRoyalBlue: #0070c0;
---SKFWhite: #ffffff;
---SKFLightBlue: #fff;
---SKFYellow: #fdf6bf;
---SKFBlack: #000000;
---SKFGrey: #b2b2b2;
---SKFLightGrey: #fefefe;
---SKFGreen: #009e2d;
---SKFRed: #8d1624;
-  --SKFInstructions: #f0f7fb;
-    --ILXNavy: #004c8f;
-  --button-border-color: #d7dcde;
-    --button-hover-color: #fdf6bf;
-    --ILXLightGrey: #bdc3c7; 
-     --ILXBlack: #262626;  
-}
-
+/*--------------------------------BUTTON END ---------------------------------- */
 
 
 
