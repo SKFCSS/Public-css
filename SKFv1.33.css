@@ -21,6 +21,30 @@
 
 
 /*--------------------------------BUTTONS START---------------------------------- */
+
+.inventory-actions .dropdown_text {
+    color:  var(--ILXNavy);
+    font-size: 15px;
+    background-image: none !important;
+    background-color:  var(--SKFWhite);;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid var(--ILXNavy); !important;
+    border-radius: 20px;
+    padding: 8px 10px !important;
+    gap: 5px;
+}
+
+.inventory-actions .dropdown_text::before {
+    font-family: 'FontAwesome';
+    content: "\f150";
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
 table.links {
     margin-bottom: 10px;
 }
@@ -173,7 +197,7 @@ a.gridCreateLink,
 a.createNewTaskLink,
 a.gridLinkBuilder,
 .ui-widget-content a.gridCreateLink {
-    color: #FFF;
+    color:  var(--SKFWhite);
     background-color:  var(--ILXNavy);
     border-color: var(--ILXNavy);
 }
@@ -183,7 +207,7 @@ a.createNewTaskLink::before,
 a.gridLinkBuilder::before, 
 .ui-widget-content a.gridCreateLink::before {
     content: "\f067"; /* fa-plus-circle */
-    color: #FFF !important;
+    color: var(--SKFWhite); !important;
 }
 
 a.gridDeleteLink,
@@ -219,7 +243,7 @@ a.gridSampleMergeTemplateLink,
 a.gridUploadMergeLink {
     color: var(--ILXNavy);!important;
     border-color: var(--ILXNavy); !important;
-    background-color: #FFF;
+    background-color: var(--SKFWhite);
 }
 
 a.gridAttachLink::before,
