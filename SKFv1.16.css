@@ -20,7 +20,6 @@ Specificity: (0,2,2)
     box-sizing: border-box!important;
 }
 
-
 .menu-action-links {
     display: flex;
     flex-direction: row;
@@ -29,6 +28,8 @@ Specificity: (0,2,2)
     gap: 10px;
     padding-right: 80px!important; /* to leave space for the gear, print, popup icon */
 }
+
+
 
 
 /* Add "<%=ApplicationSettings.Get("Branding_ThemeObject","ActiveCSS.PageInsert")%>" to a view if you want to use this CSS Style Sheet */
