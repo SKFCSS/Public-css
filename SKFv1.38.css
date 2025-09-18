@@ -849,15 +849,15 @@ width: auto!important;
 
 /*-------------------------------------------------------------WORKFLOW DIAGRAM --------------------------------------------------------------- */
 
-/*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - START -------------------------------- */
+/*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - START --------------------------------
 .wfDiagram > div > div[selected='blue'] {
 border: 2px solid var(--SKFRoyalBlue);
 background-color: var(--SKFRoyalBlue);
 color: var(--SKFWhite);
 }
-/*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - END -------------------------------- */
+------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - END -------------------------------- */
 
-/* --------------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - START --------------------------------*/
+/* --------------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - START -------------------------------
 .wffixed{
 position: fixed;
 top: 160px;
@@ -904,7 +904,7 @@ z-index: 2;
 width:100%;
 text-align:center;
 }
-/* --------------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
+-----------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
 /*--------------------------------Workflow PR/DD Fields ---------------------------------- */
 .workflow-status-area span {
 color: var(--SKFRoyalBlue); !important;
