@@ -126,7 +126,7 @@ table.links {
     font-size: 20px;
 }
 
-.detpage .menu-action-links a.archiveLink {
+.detpage .menu-action-links a.archiveLink, systemLink gridArchiveLink, systemLink gridDeleteLink {
     color:  var(--SKFRed); !important;
     border-color: var(--SKFRed); !important;
 }
