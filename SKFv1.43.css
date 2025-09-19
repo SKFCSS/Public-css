@@ -209,6 +209,7 @@ a.gridLinkBuilder::before,
 }
 
 a.gridDeleteLink,
+.detpage .menu-action-links a.deleteLink
 a.gridDetachLink,
 a.gridArchiveLink,
 a.grid-detach-link,
