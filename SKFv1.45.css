@@ -126,7 +126,9 @@ table.links {
     font-size: 20px;
 }
 
-.detpage .menu-action-links a.archiveLink, .systemLink gridArchiveLink, .systemLink gridDeleteLink , .systemLink deleteLink{
+.detpage .menu-action-links a.archiveLink, .systemLink gridArchiveLink, .systemLink gridDeleteLink , .systemLink deleteLink,
+ .systemLink gridHardDeleteLink , .systemLink HarddeleteLink{
+{
     color:  var(--SKFRed); !important;
     border-color: var(--SKFRed); !important;
 }
@@ -211,6 +213,7 @@ a.gridLinkBuilder::before,
 a.gridDeleteLink,
 a.gridHardDeleteLink,
 .detpage .menu-action-links a.deleteLink
+.detpage .menu-action-links a.harddeleteLink
 a.gridDetachLink,
 a.gridArchiveLink,
 a.grid-detach-link,
@@ -220,6 +223,7 @@ a.gridRemoveMergeLink {
 }
 
 a.gridDeleteLink::before,
+a.gridHardDeleteLink::before,
 a.gridRemoveMergeLink::before {
     content: "\f014"; /* fa-trash-alt */
 }
