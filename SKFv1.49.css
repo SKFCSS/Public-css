@@ -392,14 +392,14 @@ margin-right: 0 !important;
 
 
 /* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW - START -------------------------------*/
-
+/* 
 #customInventory_right {
 display: none;
 }
 
 .header-wrapper-inventory.custom-inventory-raven {
 margin-top: 22px!important;
-}
+}-*/
 /* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW- END ------------------------------- */
 
 /* -------------------------------Column Header Wrapping - START-----------------------------*/
