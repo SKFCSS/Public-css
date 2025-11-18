@@ -17,10 +17,53 @@
      --ILXBlack: #262626;  
 }
 
+.mtLinkContainer .dropdown>a
+{border:none !important;
+ padding:0 8px !important}
 
+.mtLinkContainer 
+{width:300px;
+ margin:0;
+ padding:0;
+ position:absolute;
+ top:35px;
+ border-radius:1px;
+ box-shadow:0 2px 6px #dbddde;
+ background:#fff;
+ list-style-type:none;
+ white-space:nowrap;
+ right:inherit;overflow:visible;
+ z-index:3}
+
+.mtLinkContainer 
+{border:none;
+ overflow-y:auto;
+ max-height:274px}
+
+
+.mtLinkContainer
+{display:block;
+             width:100%;
+             padding:3px 0}
+
+
+.mtLinkContainer 
+:hover{background:#bdc3c7}
+
+.mtLinkContainer  ul li a
+{padding:8px 18px !important}
+
+
+
+
+.mtLinkContainer
+{top:-200px}
+
+
+.mtLinkContainer {top:auto;bottom:256px}
 /*--------------------------------BUTTONS START---------------------------------- */
 
-.inventory-actions .dropdown_text , .grid-action-links a, .mtLinkContainer{
+.inventory-actions .dropdown_text , .grid-action-links a,{
     color:  var(--ILXNavy);
     font-size: 15px;
     background-image: none !important;
