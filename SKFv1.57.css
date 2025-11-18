@@ -198,9 +198,9 @@ table.links {
 a.gridCreateLink,
 a.createNewTaskLink,
 a.gridLinkBuilder,
-.systemLink openInPopup gridCreateLink,
-.gridCreateLink
-.ui-widget-content a.gridCreateLink {
+.gridCreateLink,
+.ui-widget-content,
+a.gridCreateLink {
     color:  var(--SKFWhite);
     background-color:  var(--ILXNavy);
     border-color: var(--ILXNavy);
