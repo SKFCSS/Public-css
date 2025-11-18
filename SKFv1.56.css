@@ -107,7 +107,10 @@ table.links {
 
 .detpage .menu-action-links a,
 .detpage .menu-action-links a.edit-link,
-.detpage .menu-action-links input
+.detpage .menu-action-links input,
+.detpage .mtLinkContainer a,
+.detpage .mtLinkContainer a.edit-link,
+.detpage .mtLinkContainer input
 {
 
     margin-right: 0;
