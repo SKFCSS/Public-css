@@ -107,7 +107,8 @@ table.links {
 
 .detpage .menu-action-links a,
 .detpage .menu-action-links a.edit-link,
-.detpage .menu-action-links input {
+.detpage .menu-action-links input,
+.mtLinkContainer{
 
     margin-right: 0;
     border: 2px solid rgb(0, 76, 143);
