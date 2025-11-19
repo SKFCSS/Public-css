@@ -16,14 +16,6 @@
  --ILXBlack: #262626;  
 }
 
-/*--------------------------------Add Entry Buttons ---------------------------------- */
-.detpage .menu-action-links .addEntryLink : hover,
-{
-
-    color: var(--ILXNavy)!important;
-    background-color: var(--button-hover-color)!important;
-   
-}
 
 /*--------------------------------Add Entry Buttons ---------------------------------- */
 .grid-action-links .gridCreateLink,
