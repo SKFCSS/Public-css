@@ -20,7 +20,7 @@
 
 /*--------------------------------BUTTONS START---------------------------------- */
 
-.inventory-actions .dropdown_text , .grid-action-links a, .addEntryLink{
+.inventory-actions .dropdown_text , .grid-action-links a, .addEntryLink, .save_action_link, .#save_action_link{
     color:  var(--ILXNavy);
     font-size: 15px;
     background-image: none !important;
