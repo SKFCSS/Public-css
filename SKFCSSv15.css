@@ -44,7 +44,7 @@
 	padding: 0 !important;
     background: none !important;
     font-size: 15px;
-    color: #004c8f;
+    color: var(--ILXNavy);
 }
 
 /*--------------------------------BUTTONS START---------------------------------- */
@@ -312,7 +312,7 @@ a.gridSampleMergeTemplateLink::before {
 }
 
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
-Specificity: (0,2,2)
+
  {
     height: 28px!important;
     width: 100%!important;
@@ -508,7 +508,7 @@ background-color: var(--SKFYellow);
     margin-right: 8px;
 }
 
-.fieldarea-field input[type="text"], ,
+.fieldarea-field input[type="text"],
 .fieldarea-field input[type="checkbox"] {
 width: 30px;
 height: 30px;
@@ -675,10 +675,7 @@ outline: 1px solid var(--SKFYellow);
 /*------------------------------- BREADCRUMBS - DEFINED AND UNDERLINED ON THE DETAIL VIEW - END-------------------------------*/
 /* ------------------------------- DETAIL VIEW - SECTIONS- START------------------------------- */
 
-.tabs-section.ui-tabs .ui-tabs-panel {
-padding:0 !important;
-padding-bottom: 0 !important;
-}
+
 
 .tabs-section > .secbase, .secbase > .secbase, .ui-tabs-panel > .secbase {
 margin-bottom: 0 !important;
@@ -791,7 +788,7 @@ li.ui-tabs-active {
 
 top: 1px !important;
 background-color: var(--SKFWhite)!important;
-border-top: #var(--SKFBlack) 3px solid !important;
+border-top: var(--SKFBlack) 3px solid;
 }
 
 .content>.secbase,
@@ -957,7 +954,7 @@ font-weight: 600;
     align-items: center;
     text-align: center;
     font-size: 16px;
-    color: #004C8F;
+    color: var(--ILXNavy);
     padding-bottom: 0px;
 }
 
@@ -975,7 +972,7 @@ font-weight: 600;
 }
 
 .search-container {
-  border: 1px solid #004c8f;
+  border: 1px solid var(--ILXNavy);
   height: 48px;
   display: flex;
   width: 470px;
@@ -986,7 +983,7 @@ font-weight: 600;
 }
 
 .search-menu .search-container input::placeholder {
-  color: #004c8f;
+  color: var(--ILXNavy);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: italic;
@@ -1017,7 +1014,7 @@ font-weight: 600;
 }
 
 .search-menu__results button[aria-selected=true] span span span span {
-  color: #004c8f;
+  color: var(--ILXNavy);
 }
 
 .search-menu__results button[aria-selected=false] span span span span {
