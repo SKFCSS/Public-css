@@ -15,6 +15,9 @@
 --ILXLightGrey: #bdc3c7; 
  --ILXBlack: #262626;  
 }
+
+
+/*--------------------------------Add Entry Buttons ---------------------------------- */
 .grid-action-links .gridCreateLink,
 .detpage .menu-action-links .addEntryLink 
 {
@@ -218,7 +221,8 @@ table.links {
 
 .menu-action-links a:hover, 
 .menu-action-links input:hover {
-    background-color: var(--button-hover-color);
+   background-color: var(--button-hover-color);
+    color: var(--ILXNavy);
 }
 
 
@@ -322,6 +326,7 @@ a.gridSampleMergeTemplateLink::before {
 
 .grid-action-links a:hover {
     background-color: var(--button-hover-color);
+    color: var(--ILXNavy);
 }
 
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
