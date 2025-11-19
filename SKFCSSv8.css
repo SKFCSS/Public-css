@@ -9,20 +9,21 @@
 --SKFLightGrey: #fefefe;
 --SKFGreen: #009e2d;
 --SKFRed: #8d1624;
-  --SKFInstructions: #f0f7fb;
-    --ILXNavy: #004c8f;
-  --button-border-color: #d7dcde;
-    --button-hover-color: #fdf6bf;
-    --ILXLightGrey: #bdc3c7; 
-     --ILXBlack: #262626;  
+--SKFInstructions: #f0f7fb;
+--ILXNavy: #004c8f;
+--button-border-color: #d7dcde;
+--button-hover-color: #fdf6bf;
+--ILXLightGrey: #bdc3c7; 
+--ILXBlack: #262626;  
 }
-
+/*--------------------------------not tested---------------------------------- */
 
 /*--------------------------------BUTTONS START---------------------------------- */
 
 .inventory-actions,
 .dropdown_text , 
-.grid-action-links a{
+.grid-action-links a,
+.mtLinkContainer{
     color:  var(--ILXNavy);
     font-size: 15px;
     background-image: none !important;
@@ -1316,3 +1317,5 @@ background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' wi
 
 
 /* --------------------------------GENERAL - END--------------------------------*/
+
+---------------------- */
