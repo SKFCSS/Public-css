@@ -20,9 +20,7 @@
 
 /*--------------------------------BUTTONS START---------------------------------- */
 
-.inventory-actions,
-.dropdown_text , 
-.grid-action-links a{
+.inventory-actions .dropdown_text , .grid-action-links a{
     color:  var(--ILXNavy);
     font-size: 15px;
     background-image: none !important;
@@ -36,7 +34,6 @@
     padding: 8px 10px !important;
     gap: 5px;
 }
-
 
 .inventory-actions .dropdown_text::before {
     font-family: 'FontAwesome';
@@ -165,7 +162,6 @@ table.links {
 .menu-action-links a:hover, 
 .menu-action-links input:hover {
     background-color: var(--button-hover-color);
-     color:  var(--ILXNavy);
 }
 
 
@@ -284,7 +280,6 @@ a.gridSampleMergeTemplateLink::before {
 
 .grid-action-links a:hover {
     background-color: var(--button-hover-color);
-     color:  var(--ILXNavy);
 }
 
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
@@ -325,7 +320,6 @@ Specificity: (0,2,2)
 .app-tabs ul li a:hover {
 border: none;
 color: var(--SKFRoyalBlue); !important;
-   
 
 }
 
@@ -1317,5 +1311,3 @@ background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' wi
 
 
 /* --------------------------------GENERAL - END--------------------------------*/
-
-
