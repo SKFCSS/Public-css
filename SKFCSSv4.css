@@ -162,6 +162,7 @@ table.links {
 .menu-action-links a:hover, 
 .menu-action-links input:hover {
     background-color: var(--button-hover-color);
+     color:  var(--ILXNavy);
 }
 
 
@@ -280,6 +281,7 @@ a.gridSampleMergeTemplateLink::before {
 
 .grid-action-links a:hover {
     background-color: var(--button-hover-color);
+     color:  var(--ILXNavy);
 }
 
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
@@ -320,6 +322,7 @@ Specificity: (0,2,2)
 .app-tabs ul li a:hover {
 border: none;
 color: var(--SKFRoyalBlue); !important;
+   
 
 }
 
