@@ -259,8 +259,8 @@ a.gridDetachLink,
 a.gridArchiveLink,
 a.grid-detach-link,
 a.gridRemoveMergeLink {
-    color: var(--SKFRed);
-    border-color: var(--SKFRed);
+    color: var(--SKFRed)!important;
+    border-color: var(--SKFRed)!important;
 }
 
 a.gridDeleteLink::before,
