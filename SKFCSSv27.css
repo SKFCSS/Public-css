@@ -16,7 +16,12 @@
  --ILXBlack: #262626;  
 }
 
-.translate-icon:hover, .grid-action-links .createNewTaskLink:hover, .grid-action-links .gridCreateLink:hover, .grid-action-links .grid-attach-link:hover, .grid-action-links .gridAttachLink:hover, .grid-action-links .gridLinkBuilder:hover, .default .ui-widget-content .grid-action-links .createNewTaskLink:hover, .default .ui-widget-content .grid-action-links .gridCreateLink:hover, .default .ui-widget-content .grid-action-links .grid-attach-link:hover, .default .ui-widget-content .grid-action-links .gridAttachLink:hover, .default .ui-widget-content .grid-action-links .gridLinkBuilder:hover, .detpage .menu-action-links .addEntryLink:hover, .detpage .menu-action-links .deleteLink:hover, .detpage .menu-action-links .archiveLink:hover, .detpage .menu-action-links .edit-link:hover, .detpage .menu-action-links .runNowLink:hover, #save_action_link:hover {
+.gridCreateLink:hover, 
+.grid-action-links .gridAttachLink:hover,
+.createNewTaskLink:hover, 
+.gridCreateLink:hover, .
+.addEntryLink:hover,  
+#save_action_link:hover {
     color: var(--ILXNavy);
     text-decoration: none;
 }
