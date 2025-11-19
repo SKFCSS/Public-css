@@ -222,6 +222,9 @@ table.links {
 a.gridCreateLink,
 a.createNewTaskLink,
 a.gridLinkBuilder,
+.gridCreateLink,
+.createNewTaskLink,
+.gridLinkBuilder,
 .ui-widget-content a.gridCreateLink {
     color:  var(--SKFWhite);
     background-color:  var(--ILXNavy);
