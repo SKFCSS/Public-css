@@ -187,8 +187,8 @@ table.links {
 }
 
 .detpage .menu-action-links a.archiveLink, systemLink gridArchiveLink, systemLink gridDeleteLink {
-    color:  var(--SKFRed); !important;
-    border-color: var(--SKFRed); !important;
+    color:  var(--SKFRed)!important;
+    border-color: var(--SKFRed)!important;
 }
 
 .detpage .menu-action-links a#workflow-add-comment img {
