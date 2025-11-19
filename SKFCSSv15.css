@@ -24,9 +24,9 @@
 .detpage .menu-action-links input {
     margin-right: 0;
     border: 2px solid rgb(0, 76, 143);
-    padding: 8px 10px !important;
+    padding: 8px 10px ;
     border-radius: 21px;
-    background-image: none !important;
+    background-image: none ;
     color: rgb(0, 76, 143);
     font-size: 15px;
     font-weight: 600;
@@ -41,8 +41,8 @@
 }
  
 .detpage .menu-action-links .mtLinkContainer a.dropdown_text {
-	padding: 0 !important;
-    background: none !important;
+	padding: 0 ;
+    background: none ;
     font-size: 15px;
     color: var(--ILXNavy);
 }
@@ -52,15 +52,15 @@
 .inventory-actions .dropdown_text , .grid-action-links a{
     color:  var(--ILXNavy);
     font-size: 15px;
-    background-image: none !important;
+    background-image: none ;
     background-color:  var(--SKFWhite);;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    border: 2px solid var(--ILXNavy); !important;
+    border: 2px solid var(--ILXNavy); ;
     border-radius: 20px;
-    padding: 8px 10px !important;
+    padding: 8px 10px ;
     gap: 5px;
 }
 
@@ -77,11 +77,11 @@ table.links {
 }
 
 .secbase .links_container {
-    line-height: unset !important;
+    line-height: unset ;
 }
 
 .secbase .secbase .header {
-    margin-left: 0 !important;
+    margin-left: 0 ;
 }
 
 .secbase.no_title > .header {
@@ -95,14 +95,14 @@ table.links {
     gap: 5px;
     align-items: center;
     justify-content: flex-start;
-    height: unset !important;
-    padding: 0 !important;
+    height: unset ;
+    padding: 0 ;
 }
 
 
 .detpage>*>.header .main {
-    height: unset !important;
-    padding-bottom: 10px!important;
+    height: unset ;
+    padding-bottom: 10px;
     border: none;
     display: flex;
     align-items: center;
@@ -115,17 +115,17 @@ table.links {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    padding-right: 80px!important; /* to leave space for the gear, print, popup icon */
+    padding-right: 80px; /* to leave space for the gear, print, popup icon */
 }
 
 
 @media (max-width: 768px) {
     .menu-action-links {
-        padding-right: 0!important;
+        padding-right: 0;
     }
 
     .detpage .fieldarea-field {
-        width: 100% !important;
+        width: 100% ;
     }
     
     .detpage .menu-action-links a, 
@@ -140,9 +140,9 @@ table.links {
 
     margin-right: 0;
     border: 2px solid rgb(0, 76, 143);
-    padding: 8px 10px!important;
+    padding: 8px 10px;
     border-radius: 21px;
-    background-image: none !important;
+    background-image: none ;
     color: rgb(0, 76, 143);
     font-size: 15px;
     font-weight: 600;
@@ -156,8 +156,8 @@ table.links {
 }
 
 .detpage .menu-action-links a.archiveLink, systemLink gridArchiveLink, systemLink gridDeleteLink {
-    color:  var(--SKFRed); !important;
-    border-color: var(--SKFRed); !important;
+    color:  var(--SKFRed); ;
+    border-color: var(--SKFRed); ;
 }
 
 .detpage .menu-action-links a#workflow-add-comment img {
@@ -205,12 +205,12 @@ table.links {
 }
 
 .grid-action-links a {
-    padding: 8px 10px!important;
-    border-width: 2px!important;
-    border-style:  solid!important;
+    padding: 8px 10px;
+    border-width: 2px;
+    border-style:  solid;
     border-radius: 21px;
-    background-image: none!important;
-    font-size: 14px!important;
+    background-image: none;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -234,7 +234,7 @@ a.createNewTaskLink::before,
 a.gridLinkBuilder::before, 
 .ui-widget-content a.gridCreateLink::before {
     content: "\f067"; /* fa-plus-circle */
-    color: var(--SKFWhite); !important;
+    color: var(--SKFWhite); ;
 }
 
 a.gridDeleteLink,
@@ -268,8 +268,8 @@ a.gridAttachLink,
 a.grid-attach-link,
 a.gridSampleMergeTemplateLink,
 a.gridUploadMergeLink {
-    color: var(--ILXNavy);!important;
-    border-color: var(--ILXNavy); !important;
+    color: var(--ILXNavy);;
+    border-color: var(--ILXNavy); ;
     background-color: var(--SKFWhite);
 }
 
@@ -304,7 +304,7 @@ a.gridSampleMergeTemplateLink::before {
 .pagerContainer:empty,
 .group-item:empty,
 .massupdate-container:empty {
-    display: none!important;
+    display: none;
 }
 
 .grid-action-links a:hover {
@@ -314,23 +314,23 @@ a.gridSampleMergeTemplateLink::before {
 .inventory-row th input[type="text"], .map-wrapper th input[type="text"], .detpage .inventory-row th input[type="text"]
 
  {
-    height: 28px!important;
-    width: 100%!important;
-    padding: 0 25px 0 10px!important;
-    color: var(--ILXLightGrey); !important;
-    font-family: "Open Sans", sans-serif!important;
-    font-size: 11px !important;
-    font-weight: 400 !important;
+    height: 28px;
+    width: 100%;
+    padding: 0 25px 0 10px;
+    color: var(--ILXLightGrey); ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px ;
+    font-weight: 400 ;
     line-height: 24px;
     letter-spacing: 0.15px;
-    background: white!important;
-    border-color: var(--ILXLightGrey);!important;
-    border-radius: 2px!important;
-    border-style: solid!important;
-    border-width: thin!important;
-    -webkit-box-sizing: border-box!important;
-    -moz-box-sizing: border-box!important;
-    box-sizing: border-box!important;
+    background: white;
+    border-color: var(--ILXLightGrey);;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: thin;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -348,7 +348,7 @@ a.gridSampleMergeTemplateLink::before {
 .app-tabs ul li.selected-tab>a,
 .app-tabs ul li a:hover {
 border: none;
-color: var(--SKFRoyalBlue); !important;
+color: var(--SKFRoyalBlue); ;
 
 }
 
@@ -362,7 +362,7 @@ color: var(--SKFBlack);
 
 /*--------------------------------Inventory Row Text ---------------------------------- */
 .inventory-row td.data-cell, .map-wrapper td.data-cell, .detpage .inventory-row td.data-cell {
-color: var(--SKFBlack); !important;
+color: var(--SKFBlack); ;
 font-family: "Open Sans", sans-serif;
 font-size: 12px;
 font-weight: normal;
@@ -371,7 +371,7 @@ padding: 10px;
 }
 /*--------------------------------Header Inventory Columns ---------------------------------- */
 div.dropdown_container a {
-color: var(--SKFBlack); !important;
+color: var(--SKFBlack); ;
 font-family: "Open Sans", sans-serif;
 font-size: 12px;
 font-weight: 600;
@@ -381,11 +381,11 @@ text-decoration: none;
 /* --------------------------GRID AND INVENTORY TABLES HEADER COLOUR - START --------------------------*/
 table.links, .detpage .links, .links_container {
 
-background: var(--SKFLightGrey)!important;
+background: var(--SKFLightGrey);
 border-width: 1px 1px 0 1px;
 border-style: solid;
 
-border-color: var(--SKFLightGrey)!important;
+border-color: var(--SKFLightGrey);
 }
 
 /* --------------------------GRID AND INVENTORY TABLES HEADER COLOUR - END --------------------------*/
@@ -403,16 +403,16 @@ align-items: flex-start;
 }
 
 table.links {
-background-image:none!important;
+background-image:none;
 }
 
 .datagrid .td_sorting .tool-tip {
-margin-left: 0!important;
+margin-left: 0;
 }
 
 
 .datagrid .td_sorting .dropdown_container {
-margin-right: 0 !important;
+margin-right: 0 ;
 }
 
 
@@ -427,7 +427,7 @@ display: none;
 }
 
 .header-wrapper-inventory.custom-inventory-raven {
-margin-top: 22px!important;
+margin-top: 22px;
 }-*/
 /* ------------------------------- HIDE CUSTOM INVENTORY DROPDOWN MENU ON INVENTORY VIEW- END ------------------------------- */
 
@@ -441,11 +441,11 @@ gap: 2px;
 }
 
 .datagrid thead tr.header {
-max-height: unset !important;
+max-height: unset ;
 }
 
 .datagrid .dropdown a:link {
-white-space: normal !important;
+white-space: normal ;
 }
 
 /* ------------------------Column Header Wrapping - END -------------------------------*/
@@ -482,29 +482,29 @@ background-color: var(--SKFYellow);
 .fieldarea-field textarea, 
 .fieldarea-field input,
 .fieldarea-field select {
-    border-radius: 8px !important;
+    border-radius: 8px ;
     box-sizing: border-box;
-    border: 1px solid  var(--SKFRoyalBlue)!important;
+    border: 1px solid  var(--SKFRoyalBlue);
     padding: 8px;
 }
 
 .fieldarea-field input,
 .fieldarea-field select {
-    height: unset !important;
+    height: unset ;
 }
 
 .detpage .fieldarea-field{
-    padding-top: unset !important;
+    padding-top: unset ;
 }
 
 .fieldarea-field textarea,
 .fieldarea-field select,
 .fieldarea-field input[type="text"] {
-    width: 100%!important;
+    width: 100%;
 }
 
 .fieldarea-field select[name$="Timezone"] {
-    width: auto!important;
+    width: auto;
     margin-right: 8px;
 }
 
@@ -513,12 +513,12 @@ background-color: var(--SKFYellow);
 width: 30px;
 height: 30px;
 }{
-    height: unset!important;
-    line-height: unset!important;
+    height: unset;
+    line-height: unset;
 }
 
 .detpage .fieldarea-caption .caption-wrapper {
-    min-height: unset !important;
+    min-height: unset ;
 }
 
 /*------------------------- FIELD AREA - START -------------------------------*/
@@ -542,7 +542,7 @@ gap: 10px;
 .detpage[data-viewmode="View"] .fieldarea-field,
 .detpage[data-viewmode="Edit"] .fieldarea-field,
 .detpage[data-viewmode="Create"] .fieldarea-field {
-background-color: #fafafa;
+background-color: var(--SKFGrey);
 cursor: not-allowed;
 }
 
@@ -564,8 +564,8 @@ min-height: 25px;
 }
 
 .detpage .fieldarea-row {
-    margin-right: 0 !important;
-    line-height: unset !important;
+    margin-right: 0 ;
+    line-height: unset ;
 }
 
 .fieldHint {
@@ -573,14 +573,14 @@ min-height: 25px;
 }
 
 select[multiple='multiple'] {
-width: 80% !important;
+width: 80% ;
 }
 
 
 .detpage input[type=radio] {
   background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27%3E%3Cpath d=%27M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z%27 fill=%27%23004C8F%27/%3E%3C/svg%3E") no-repeat;
-  width: 22px !important;
-  height: 22px !important;
+  width: 22px ;
+  height: 22px ;
   margin-right: 0px;
   appearance: none;
   -webkit-appearance: none;
@@ -642,7 +642,7 @@ content: "\f05c";
 }
 
 .entityselector-selectLink, .entityselector-clearLink{
-font-size: 0 !important;
+font-size: 0 ;
 }
 
 .entityselector-selectLink:hover:before, .entityselector-clearLink:hover:before,.entityselector-assignToMeLink:before {
@@ -660,11 +660,11 @@ padding-bottom: 8px;
 }
 
 .breadcrumbs a {
-color:var(--SKFRoyalBlue)!important;
+color:var(--SKFRoyalBlue);
 
 padding: 2px 0;
-font-size: 12px !important;
-border-bottom: 2px solid var(--SKFRoyalBlue) !important;
+font-size: 12px ;
+border-bottom: 2px solid var(--SKFRoyalBlue) ;
 }
 
 .breadcrumbs a:hover {
@@ -678,21 +678,21 @@ outline: 1px solid var(--SKFYellow);
 
 
 .tabs-section > .secbase, .secbase > .secbase, .ui-tabs-panel > .secbase {
-margin-bottom: 0 !important;
+margin-bottom: 0 ;
 
 }
 
 .secbase .links_container {
-line-height: inherit!important;
+line-height: inherit;
 }
 
 
 ul.tabs-section {
-margin-top: 13px!important;
+margin-top: 13px;
 
 
-background-color: transparent!important;
-border-bottom: 1px solid var(--SKFGrey);!important;
+background-color: transparent;
+border-bottom: 1px solid var(--SKFGrey);;
 
 display: flex;
 flex-direction: row;
@@ -706,16 +706,16 @@ justify-content: flex-start;
 
 /* -------------------------------HEADERS AND MENUS DISPLAY FIELD - START-------------------------------*/
 .detpage .menu-top-container .main {
-border:none !important;
+border:none ;
 }
 .detpage .menu-top-container-float {
-background-color: var(--SKFWhite)!important;
+background-color: var(--SKFWhite);
 padding-bottom: 10px;
 }
 
 
 .detpage .header .main .title-container .text {
-color: var(--SKFRoyalBlue)!important;
+color: var(--SKFRoyalBlue);
 font-size: 25px;
 font-weight: normal;
 }
@@ -726,43 +726,43 @@ font-weight: normal;
 li.tabs-section {
 
 
-background-color: var(--SKFWhite)!important;
-border: 1px solid var(--SKFGrey)!important;
+background-color: var(--SKFWhite);
+border: 1px solid var(--SKFGrey);
 height: 36px;
 display: flex;
 align-items: center;
-position: relative!important;
+position: relative;
 }
 
 
 li.ui-tabs-active {
-top: 1px!important;
-background-color: var(--SKFWhite)!important;
+top: 1px;
+background-color: var(--SKFWhite);
 border-top: var(--SKFRoyalBlue)
-3px solid!important;
+3px solid;
 }
 /* ------------------------------- DETAIL VIEW - GROUP SECTIONS WITH A BORDER AND HIGHLIGHT SECTION TITLE- END------------------------------- */
 
 /*------------------------------- SECTIONS ON DETAIL PAGE - START-------------------------------*/
 
 .tabs-section.ui-tabs .ui-tabs-panel {
-padding: 0 !important;
-padding-bottom: 0 !important;
+padding: 0 ;
+padding-bottom: 0 ;
 }
 
 .tabs-section>.secbase,
 .secbase>.secbase,
 .ui-tabs-panel>.secbase {
-margin-bottom: 0 !important;
+margin-bottom: 0 ;
 
 }
 
 ul.tabs-section {
-margin-top: 13px !important;
+margin-top: 13px ;
 
 
-background-color: transparent !important;
-border-bottom: 1px solid var(--SKFBlack)!important;
+background-color: transparent ;
+border-bottom: 1px solid var(--SKFBlack);
 
 display: flex;
 flex-direction: row;
@@ -775,19 +775,19 @@ justify-content: flex-start;
 li.tabs-section {
 
 
-background-color: var(--SKFWhite) !important;
-border: 1px solidvar(--SKFBlack)!important;
+background-color: var(--SKFWhite) ;
+border: 1px solidvar(--SKFBlack);
 height: 36px;
 display: flex;
 align-items: center;
-position: relative !important;
+position: relative ;
 }
 
 
 li.ui-tabs-active {
 
-top: 1px !important;
-background-color: var(--SKFWhite)!important;
+top: 1px ;
+background-color: var(--SKFWhite);
 border-top: var(--SKFBlack) 3px solid;
 }
 
@@ -796,7 +796,7 @@ border-top: var(--SKFBlack) 3px solid;
 padding-left: 5px;
 border: solid;
 border-width: 1px 1px 1px 3px;
-border-color: var(--ILXLightGrey)!important;
+border-color: var(--ILXLightGrey);
 box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.8);
 border-radius: 10px;
 margin-top: 20px;
@@ -807,31 +807,31 @@ margin-right: 10px;
 }
 
 .secbase.secbase-raven>.header .main>.title-container {
-border: none !important;
+border: none ;
 }
 
 .detpage .header .main,
 .secbase>.content,
 .secbase.secbase-raven>.footer>.main {
-background-color: transparent !important;
+background-color: transparent ;
 }
 
 .secbase.closed>.header {
-height: 48px !important;
+height: 48px ;
 }
 
 .secbase.secbase-raven>.header .main>.title-container .text {
-color: var(--SKFBlack) !important;
+color: var(--SKFBlack) ;
 }
 
 .detpage .fieldarea-caption .caption-wrapper {
-color: var(--SKFBlack)!important;
-font-weight: 400 !important;
-min-height: auto !important;
+color: var(--SKFBlack);
+font-weight: 400 ;
+min-height: auto ;
 }
 
 .secbase.secbase-raven .content .header {
-margin-left: auto !important;
+margin-left: auto ;
 }
 
 
@@ -845,27 +845,27 @@ margin-left: auto !important;
 
 .inline-edit, .popup-edit {
 background-color: var(--SKFLightGrey);
-border: 1px dotted var(--SKFLightBlue) !important;
+border: 1px dotted var(--SKFLightBlue) ;
 }
 
 .inventory-row td.data-cell.wrap {
-white-space: normal !important;
+white-space: normal ;
 }
 
 #inLineEditForm {
-padding:0px !important;
+padding:0px ;
 }
 
 #inLineEditForm .fieldarea-field input[type="text"] {
-width: auto!important;
+width: auto;
 }
 
 #inLineEditForm .fieldarea-row {
-margin-right: 0 !important;
+margin-right: 0 ;
 }
 
 #inLineEditForm .fieldarea-field select, .fieldarea-field select[multiple] {
-width: auto!important;
+width: auto;
 }
 
 /*------------------------------------------------- INLINE EDIT - END -------------------------------------------------*/
@@ -905,15 +905,15 @@ color: var(--SKFBlack);
 
 
 .wfDiagram > div > div[selected='red'] {
-border: 2px solidvar(--SKFRoyalBlue)!important;
-background-color: var(--SKFRed)!important;
-color: var(--SKFWhite)!important;
+border: 2px solidvar(--SKFRoyalBlue);
+background-color: var(--SKFRed);
+color: var(--SKFWhite);
 }
 
 .wfDiagram > div > div[selected='green'] {
-border: 2px solid var(--SKFRoyalBlue)!important;
-background-color: var(--SKFGreen)!important;
-color: var(--SKFWhite)!important;
+border: 2px solid var(--SKFRoyalBlue);
+background-color: var(--SKFGreen);
+color: var(--SKFWhite);
 }
 .wffixed{
 position: fixed;
@@ -931,7 +931,7 @@ text-align:center;
 -----------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
 /*--------------------------------Workflow PR/DD Fields ---------------------------------- */
 .workflow-status-area span {
-color: var(--SKFRoyalBlue); !important;
+color: var(--SKFRoyalBlue); ;
 font-family: "Open Sans", sans-serif;
 font-size: 13px;
 font-weight: normal;
@@ -961,8 +961,8 @@ font-weight: 600;
 .no-records-image {
     margin-bottom: 100px;
     max-width: 100%;
-    height: 75px !important;
-    width: 100px !important;
+    height: 75px ;
+    width: 100px ;
 }
 
 /* Application dropdown in Alliance theme  */
@@ -1002,7 +1002,7 @@ font-weight: 600;
 
 .search-menu__results {
   width: 475px;
-  border-radius: 8px !important;
+  border-radius: 8px ;
 }
 
 .search-menu__results button span span span span {
@@ -1030,7 +1030,7 @@ td.sig-preview img {
 height: 120px;
 width: auto;
 background-color: var(--SKFWhite);
-border: 1px solid gray;
+border: 1px solid var(--ILXLightGrey);
 border-radius: 2px;
 }
 .prettyCell {
@@ -1068,7 +1068,7 @@ padding: 12px;
 
 /*--------------------------------HyperLink on Inventory View colour ---------------------------------- */
 .inventory-row td.data-cell a, .map-wrapper td.data-cell a, .detpage .inventory-row td.data-cell a {
-color: var(--SKFRoyalBlue)!important;
+color: var(--SKFRoyalBlue);
 font-family: "Open Sans", sans-serif;
 font-size: 1em;
 font-weight: 600;
@@ -1078,13 +1078,13 @@ text-decoration: none;
 
 /*--------------------------------Hyperlinks ---------------------------------- */
 .det-sec a:hover {
-color: var(--SKFRoyalBlue); !important;
-background-color: var(--SKFYellow)!important;
+color: var(--SKFRoyalBlue); ;
+background-color: var(--SKFYellow);
 text-decoration: none;
 }
 
 .det-sec a {
-color: var(--SKFRoyalBlue); !important;
+color: var(--SKFRoyalBlue); ;
 font-family: "Open Sans", sans-serif;
 font-size: 14px;
 font-weight: normal;
@@ -1094,7 +1094,7 @@ text-decoration: none;
 
 /* styling for location dropdown */
 #activeLocationLink:before {
-content: "" !important; }
+content: "" ; }
 
 #location-dropdown a {
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='%23004C8F'%3E%3Cpath d='M12.1529 12.9997C12.7134 12.9997 13.1932 12.8001 13.5924 12.401C13.9915 12.0018 14.1911 11.522 14.1911 10.9615C14.1911 10.401 13.9915 9.92112 13.5924 9.52197C13.1932 9.12282 12.7134 8.92324 12.1529 8.92324C11.5924 8.92324 11.1125 9.12282 10.7134 9.52197C10.3142 9.92112 10.1146 10.401 10.1146 10.9615C10.1146 11.522 10.3142 12.0018 10.7134 12.401C11.1125 12.8001 11.5924 12.9997 12.1529 12.9997ZM12.1529 20.4901C14.2251 18.5878 15.7622 16.8595 16.7643 15.3054C17.7665 13.7513 18.2675 12.3712 18.2675 11.1653C18.2675 9.3139 17.6773 7.79798 16.4968 6.61751C15.3163 5.43704 13.8684 4.84681 12.1529 4.84681C10.4374 4.84681 8.98938 5.43704 7.80892 6.61751C6.62845 7.79798 6.03822 9.3139 6.03822 11.1653C6.03822 12.3712 6.53928 13.7513 7.5414 15.3054C8.54352 16.8595 10.0807 18.5878 12.1529 20.4901ZM12.1529 22.8086C12.017 22.8086 11.8811 22.7831 11.7452 22.7322C11.6093 22.6812 11.4904 22.6133 11.3885 22.5283C8.9087 20.3373 7.05733 18.3033 5.8344 16.4264C4.61146 14.5496 4 12.7959 4 11.1653C4 8.61751 4.81953 6.58779 6.4586 5.07611C8.09766 3.56443 9.99575 2.80859 12.1529 2.80859C14.31 2.80859 16.2081 3.56443 17.8471 5.07611C19.4862 6.58779 20.3057 8.61751 20.3057 11.1653C20.3057 12.7959 19.6943 14.5496 18.4713 16.4264C17.2484 18.3033 15.397 20.3373 12.9172 22.5283C12.8153 22.6133 12.6964 22.6812 12.5605 22.7322C12.4246 22.7831 12.2887 22.8086 12.1529 22.8086Z' fill='%23%23004C8F'/%3E%3C/svg%3E%0A") no-repeat;
@@ -1142,7 +1142,7 @@ height: 24px;
 margin-top: 5px; }
 
 #ufd-prerendered input {
-width: 116px !important;
+width: 116px ;
 color: var(--SKFRoyalBlue) ;
 font-family: "Open Sans", sans-serif;
 font-size: 16px;
@@ -1151,17 +1151,17 @@ border: none; }
 
 #ufd-prerendered span {
 display: flex;
-width: 141px !important;
+width: 141px ;
 background-color: transparent; }
 
 #ufd-container .plain .list-wrapper {
 border-radius: 8px;
 margin-top: 9px;
-height: 146px !important;
+height: 146px ;
 box-shadow: 0px 4px 14px 0px rgba(0, 76, 143, 0.22);
-min-width: 200px !important;
-right: 0px !important;
-left: inherit !important; }
+min-width: 200px ;
+right: 0px ;
+left: inherit ; }
 
 #ufd-container-locationOption div.list-wrapper div.list-scroll {
 border: none;
@@ -1171,7 +1171,7 @@ color: var(--SKFBlack);
 border-radius: 8px;
 padding: 10px;
 box-sizing: border-box;
-height: inherit !important; }
+height: inherit ; }
 
 #ufd-container ul {
 gap: 3px;
@@ -1219,7 +1219,7 @@ padding: 0px; }
 
 #application-dropdown .appdropdown-title {
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.575 15.275C11.4417 15.275 11.3167 15.2541 11.2 15.2125C11.0833 15.1708 10.975 15.1 10.875 15L6.275 10.4C6.09167 10.2166 6 9.98331 6 9.69998C6 9.41664 6.09167 9.18331 6.275 8.99998C6.45833 8.81664 6.69167 8.72498 6.975 8.72498C7.25833 8.72498 7.49167 8.81664 7.675 8.99998L11.575 12.9L15.475 8.99998C15.6583 8.81664 15.8917 8.72498 16.175 8.72498C16.4583 8.72498 16.6917 8.81664 16.875 8.99998C17.0583 9.18331 17.15 9.41664 17.15 9.69998C17.15 9.98331 17.0583 10.2166 16.875 10.4L12.275 15C12.175 15.1 12.0667 15.1708 11.95 15.2125C11.8333 15.2541 11.7083 15.275 11.575 15.275Z' fill='%23004C8F'/%3E%3C/svg%3E") no-repeat;
-background-position: right !important; }
+background-position: right ; }
 
 #application-dropdown .appdropdown-title span {
 width: 150px;
@@ -1267,7 +1267,7 @@ font-family: "Open Sans", sans-serif; }
 border-color: var(--SKFRoyalBlue) ; }
 
 #application-dropdown .appdropdown-title #app-down-arrow {
-display: none !important; }
+display: none ; }
 
 #application-dropdown .appdropdown-dropdown .appdropdown-group-header {
 padding-left: 0px;
@@ -1320,7 +1320,7 @@ width: 175px; }
 #ufd-prerendered {
 right: 2px; }
 #ufd-prerendered input {
-width: 107px !important; } }
+width: 107px ; } }
 
 /*--------------------------------New Logo ---------------------------------- */
 .new-logo img {
