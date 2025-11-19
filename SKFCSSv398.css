@@ -16,6 +16,10 @@
  --ILXBlack: #262626;  
 }
 
+#save_action_link {
+    background-image: url(../images/Save.png);
+  color: var(--ILXNavy)!important;
+}
 
 /*--------------------------------Add Entry Buttons ---------------------------------- */
 .grid-action-links .gridCreateLink,
