@@ -17,7 +17,7 @@
 }
 
 /*--------------------------------Add Entry Buttons ---------------------------------- */
-.grid-action-links .gridCreateLink: hover,
+.detpage .menu-action-links .addEntryLink : hover,
 {
 
     color: var(--ILXNavy)!important;
