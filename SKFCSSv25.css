@@ -16,32 +16,11 @@
  --ILXBlack: #262626;  
 }
 
-
-
-a.gridCreateLink,
-a.createNewTaskLink,
-a.gridLinkBuilder,
-.gridCreateLink,
-.createNewTaskLink,
-.gridLinkBuilder,
-.ui-widget-content a.gridCreateLink {
-    color:  var(--SKFWhite);
-    background-color:  var(--ILXNavy);
-    border-color: var(--ILXNavy);
-}
-
-
-a.gridCreateLink:hover,
-a.createNewTaskLink:hover,
-a.gridLinkBuilder:hover,
-.gridCreateLink:hover,
-.createNewTaskLink:hover,
-.gridLinkBuilder:hover,
-.ui-widget-content a.gridCreateLink :hover {
-   background-color: var(--button-hover-color);
+.translate-icon:hover, .grid-action-links .createNewTaskLink:hover, .grid-action-links .gridCreateLink:hover, .grid-action-links .grid-attach-link:hover, .grid-action-links .gridAttachLink:hover, .grid-action-links .gridLinkBuilder:hover, .default .ui-widget-content .grid-action-links .createNewTaskLink:hover, .default .ui-widget-content .grid-action-links .gridCreateLink:hover, .default .ui-widget-content .grid-action-links .grid-attach-link:hover, .default .ui-widget-content .grid-action-links .gridAttachLink:hover, .default .ui-widget-content .grid-action-links .gridLinkBuilder:hover, .detpage .menu-action-links .addEntryLink:hover, .detpage .menu-action-links .deleteLink:hover, .detpage .menu-action-links .archiveLink:hover, .detpage .menu-action-links .edit-link:hover, .detpage .menu-action-links .runNowLink:hover, #save_action_link:hover {
     color: var(--ILXNavy);
-    border-color: var(--ILXNavy);
+    text-decoration: none;
 }
+
 
 /*--------------------------------Add Entry Icons ---------------------------------- */
 a.gridCreateLink::before, 
