@@ -16,14 +16,13 @@
  --ILXBlack: #262626;  
 }
 
-
-gridCreateLink {
-    color:  var(--SKFWhite) !important;
-    background-color:  var(--ILXNavy)  !important;
-    border-color: var(--ILXNavy)  !important;
+a.gridCreateLink::before, 
+a.createNewTaskLink::before, 
+a.gridLinkBuilder::before, 
+.ui-widget-content a.gridCreateLink::before {
+    content: "\f067"; /* fa-plus-circle */
+    color: var(--SKFWhite); !important;
 }
-
-
 
 
 /*--------------------------------Merge Template Button ---------------------------------- */
