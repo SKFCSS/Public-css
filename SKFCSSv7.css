@@ -10,7 +10,7 @@
 --SKFGreen: #009e2d;
 --SKFRed: #8d1624;
   --SKFInstructions: #f0f7fb;
-    --ILXNavy: #004C8F; 
+    --ILXNavy: #004c8f;
   --button-border-color: #d7dcde;
     --button-hover-color: #fdf6bf;
     --ILXLightGrey: #bdc3c7; 
@@ -112,11 +112,11 @@ table.links {
 .detpage .menu-action-links input {
 
     margin-right: 0;
-    border: 2px solid   var(--ILXNavy);
+    border: 2px solid rgb(0, 76, 143);
     padding: 8px 10px!important;
     border-radius: 21px;
     background-image: none !important;
-    color:  var(--ILXNavy);
+    color: rgb(0, 76, 143);
     font-size: 15px;
     font-weight: 600;
 }
