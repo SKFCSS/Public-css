@@ -37,10 +37,10 @@
 .detpage .menu-action-links .addEntryLink: hover 
 {
 
-    color: var(--SKFWhite)!important;
+    color: var(--ILXNavy)!important;
     font-size: 15px;
     background-image: none !important;
-    background-color: var(--ILXNavy)!important;
+    background-color: (var(--button-hover-color)!important;
     display: flex;
     flex-direction: row;
     align-items: center;
