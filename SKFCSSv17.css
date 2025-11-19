@@ -1,0 +1,765 @@
+/* ============================================================
+   00 — DESIGN TOKENS / VARIABLES
+   ============================================================ */
+:root {
+    /* Brand */
+    --color-primary: #004c8f;
+    --color-secondary: #595959;
+    --color-accent: #0052cc;
+
+    /* Semantic */
+    --color-success: #4caf50;
+    --color-danger: #cc0000;
+    --color-warning: #f5a623;
+
+    /* Greys */
+    --grey-50: #fafafa;
+    --grey-100: #f0f0f0;
+    --grey-200: #e0e0e0;
+    --grey-300: #d1d1d1;
+    --grey-500: #7a7a7a;
+    --grey-700: #444444;
+    --grey-900: #222222;
+
+    /* Text */
+    --text-main: #333;
+    --text-muted: #595959;
+    --text-light: #ffffff;
+
+    /* Borders */
+    --border-light: #d8d9e2;
+    --border-mid: #c0c0c0;
+    --border-dark: #999;
+
+    /* Backgrounds */
+    --bg-light: #ffffff;
+    --bg-grey: #f6f6f6;
+    --bg-dark: #1a1a1a;
+
+    /* Radii */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-pill: 20px;
+
+    /* Spacing (4px grid) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.20);
+
+    /* Fonts */
+    --font-main: "Roboto", Arial, sans-serif;
+    --font-mono: "Courier New", monospace;
+
+    /* Layout */
+    --max-w-content: 1280px;
+    --max-w-wide: 1440px;
+}
+
+/* ============================================================
+   01 — RESET / NORMALIZE
+   ============================================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: var(--text-main);
+    background: var(--bg-light);
+    line-height: 1.4;
+}
+
+/* ============================================================
+   02 — TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+h1 { font-size: 28px; margin-bottom: var(--space-4); }
+h2 { font-size: 24px; margin-bottom: var(--space-3); }
+h3 { font-size: 20px; margin-bottom: var(--space-3); }
+
+p {
+    margin-bottom: var(--space-3);
+    color: var(--text-main);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+a:hover {
+    color: var(--color-accent);
+}
+
+/* ============================================================
+   03 — UTILITIES
+   ============================================================ */
+
+/* Spacing utilities */
+.m-0 { margin: 0 !important; }
+.mt-1 { margin-top: var(--space-1) !important; }
+.mt-2 { margin-top: var(--space-2) !important; }
+.mb-2 { margin-bottom: var(--space-2) !important; }
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-col { display: flex; flex-direction: column; }
+
+/* Grid helpers */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+
+/* Visibility */
+.hidden { display: none !important; }
+
+/* Text */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--text-muted); }
+
+/* Width */
+.w-100 { width: 100%; }
+.max-content { max-width: var(--max-w-content); margin: 0 auto; }
+
+/* ============================================================
+   04 — LAYOUT
+   ============================================================ */
+
+.container {
+    width: 100%;
+    max-width: var(--max-w-content);
+    margin: 0 auto;
+    padding: var(--space-4);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3) 0;
+    margin-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-4);
+}
+
+/* ============================================================
+   05 — BUTTONS (consolidated from 60+ variants)
+   ============================================================ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2) var(--space-3);
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease, border-color .25s ease;
+    font-size: 14px;
+    gap: 6px;
+}
+
+.btn-sm { padding: 4px 8px; font-size: 13px; }
+.btn-lg { padding: 10px 18px; font-size: 15px; }
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+.btn-primary:hover {
+    background: var(--color-accent);
+}
+
+.btn-light {
+    background: var(--bg-light);
+    border-color: var(--border-light);
+    color: var(--text-main);
+}
+.btn-light:hover {
+    background: var(--grey-100);
+}
+
+.btn-danger {
+    background: var(--color-danger);
+    color: var(--text-light);
+}
+.btn-danger:hover {
+    background: #a00000;
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+
+/* Icon spacing */
+.btn i {
+    font-size: 14px;
+}
+
+/* ============================================================
+   06 — FORMS
+   ============================================================ */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: var(--bg-light);
+    font-size: 14px;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 76, 143, 0.15);
+    outline: none;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled] {
+    background: var(--grey-100);
+    cursor: not-allowed;
+}
+
+.form-row {
+    margin-bottom: var(--space-4);
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.form-actions {
+    margin-top: var(--space-4);
+    display: flex;
+    gap: var(--space-2);
+}
+
+/* ============================================================
+   07 — TABLES
+   ============================================================ */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.table th {
+    background: var(--grey-100);
+    padding: var(--space-3);
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.table td {
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.table tr:hover td {
+    background: var(--grey-50);
+}
+
+.table-actions {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.table-sm td,
+.table-sm th {
+    padding: var(--space-2);
+}
+
+/* ============================================================
+   08 — TABS (consolidated)
+   ============================================================ */
+
+.tabs {
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: var(--space-4);
+    display: flex;
+    gap: var(--space-3);
+}
+
+.tab {
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    border-radius: var(--radius-pill);
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: background .2s ease, color .2s ease;
+}
+
+.tab:hover {
+    background: var(--grey-100);
+}
+
+.tab.active {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+
+.tab-content {
+    padding-top: var(--space-3);
+}
+
+/* ============================================================
+   09 — MENUS / NAVIGATION
+   ============================================================ */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    transition: background .2s ease;
+    border-radius: var(--radius-sm);
+}
+
+.menu-item:hover {
+    background: var(--grey-100);
+}
+
+.menu-item.active {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+
+.sidebar {
+    width: 260px;
+    background: var(--grey-50);
+    border-right: 1px solid var(--border-light);
+    padding: var(--space-4);
+}
+
+.sidebar .menu-item {
+    margin-bottom: var(--space-1);
+}
+
+/* ============================================================
+   10 — GRID / LIST VIEW
+   ============================================================ */
+
+.list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-4);
+}
+
+.list-item {
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .2s ease;
+}
+
+.list-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.list-item-title {
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.list-item-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ============================================================
+   11 — ENTITY BLOCKS (Cards, Panels, Info Blocks)
+   ============================================================ */
+
+.entity-block {
+    padding: var(--space-4);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background: var(--bg-light);
+    margin-bottom: var(--space-4);
+    box-shadow: var(--shadow-sm);
+}
+
+.entity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+}
+
+.entity-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.entity-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.entity-table {
+    margin-top: var(--space-3);
+}
+
+.entity-actions {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+}
+
+/* ============================================================
+   12 — DETAIL / PROFILE VIEWS
+   ============================================================ */
+
+.detail-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+}
+
+.detail-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.detail-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.detail-section {
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border-light);
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.detail-value {
+    color: var(--text-muted);
+}
+
+/* ============================================================
+   13 — WORKFLOWS / STEPS
+   ============================================================ */
+
+.workflow {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.workflow-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding-bottom: var(--space-2);
+}
+
+.workflow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border-light);
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+.workflow-step.active .step-indicator {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+
+.step-indicator {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    background: var(--grey-100);
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* ============================================================
+   14 — MODALS & DIALOGS
+   ============================================================ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modal-close {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ============================================================
+   15 — DROPDOWNS / POPUPS
+   ============================================================ */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    min-width: 160px;
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.dropdown-item:hover {
+    background: var(--grey-100);
+}
+
+/* ============================================================
+   16 — BREADCRUMBS
+   ============================================================ */
+
+.breadcrumbs {
+    display: flex;
+    gap: var(--space-2);
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-4);
+}
+
+.breadcrumbs a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator::after {
+    content: '/';
+    margin: 0 var(--space-2);
+    color: var(--text-muted);
+}
+
+/* ============================================================
+   17 — ATTACHMENTS / LOGS
+   ============================================================ */
+
+.attachments {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-3);
+}
+
+.attachment-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: var(--grey-50);
+}
+
+.attachment-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.log-entry {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ============================================================
+   18 — CONTEXT NAVIGATION / BUTTON GROUPS
+   ============================================================ */
+
+.context-nav {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.context-button {
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: var(--bg-light);
+    cursor: pointer;
+    font-size: 13px;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.context-button:hover {
+    background: var(--grey-100);
+}
+
+/* ============================================================
+   19 — MISC / OVERRIDES
+   ============================================================ */
+
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.m-0 { margin: 0 !important; }
+.mt-1 { margin-top: var(--space-1) !important; }
+.mb-1 { margin-bottom: var(--space-1) !important; }
+.p-0 { padding: 0 !important; }
+.pt-1 { padding-top: var(--space-1) !important; }
+.pb-1 { padding-bottom: var(--space-1) !important; }
+.w-100 { width: 100% !important; }
+
+
+
+
