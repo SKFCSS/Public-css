@@ -33,23 +33,7 @@
     gap: 5px;	
 }
 
-.grid-action-links .gridCreateLink: hover,
-.detpage .menu-action-links .addEntryLink: hover 
-{
 
-    color: var(--ILXNavy)!important;
-    font-size: 15px;
-    background-image: none !important;
-    background-color: (var(--button-hover-color)!important;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    border: 2px solid var(--ILXNavy)!important;
-    border-radius: 20px;
-    padding: 8px 10px !important;
-    gap: 5px;	
-}
 /*--------------------------------Add Entry Icons ---------------------------------- */
 a.gridCreateLink::before, 
 a.createNewTaskLink::before, 
