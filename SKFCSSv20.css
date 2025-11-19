@@ -1,6 +1,5 @@
 /*--------------------------------Color Selector ---------------------------------- */
 :root {
---SKFRoyalBlue: #0070c0;
 --SKFWhite: #ffffff;
 --SKFLightBlue: #fff;
 --SKFYellow: #fdf6bf;
@@ -348,7 +347,7 @@ Specificity: (0,2,2)
 .app-tabs ul li.selected-tab>a,
 .app-tabs ul li a:hover {
 border: none;
-color: var(--SKFRoyalBlue); !important;
+color: var(--ILXNavy) !important;
 
 }
 
@@ -454,7 +453,7 @@ white-space: normal !important;
 
 * {
 scrollbar-width: 10PX;
-scrollbar-color: var(--SKFRoyalBlue)var(--SKFGrey);
+scrollbar-color: var(--ILXNavy)var(--SKFGrey);
 }
 
 *::-webkit-scrollbar-track {
@@ -462,7 +461,7 @@ background-color: var(--SKFWhite);
 }
 
 *::-webkit-scrollbar-thumb {
-background-color: var(--SKFRoyalBlue);
+background-color: var(--ILXNavy);
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -484,7 +483,7 @@ background-color: var(--SKFYellow);
 .fieldarea-field select {
     border-radius: 8px !important;
     box-sizing: border-box;
-    border: 1px solid  var(--SKFRoyalBlue)!important;
+    border: 1px solid  var(--ILXNavy)!important;
     padding: 8px;
 }
 
@@ -629,7 +628,7 @@ font-size: 0;
 .entityselector-selectLink:before, .entityselector-clearLink:before, .entityselector-assignToMeLink:before {
 font-family: FontAwesome;
 font-size: 18px;
-color: var(--SKFRoyalBlue);
+color: var(--ILXNavy);
 padding: 5px;
 }
 
@@ -660,11 +659,11 @@ padding-bottom: 8px;
 }
 
 .breadcrumbs a {
-color:var(--SKFRoyalBlue)!important;
+color:var(--ILXNavy)!important;
 
 padding: 2px 0;
 font-size: 12px !important;
-border-bottom: 2px solid var(--SKFRoyalBlue) !important;
+border-bottom: 2px solid var(--ILXNavy) !important;
 }
 
 .breadcrumbs a:hover {
@@ -718,7 +717,7 @@ padding-bottom: 10px;
 
 
 .detpage .header .main .title-container .text {
-color: var(--SKFRoyalBlue)!important;
+color: var(--ILXNavy)!important;
 font-size: 25px;
 font-weight: normal;
 }
@@ -741,7 +740,7 @@ position: relative!important;
 li.ui-tabs-active {
 top: 1px!important;
 background-color: var(--SKFWhite)!important;
-border-top: var(--SKFRoyalBlue)
+border-top: var(--ILXNavy)
 3px solid!important;
 }
 /* ------------------------------- DETAIL VIEW - GROUP SECTIONS WITH A BORDER AND HIGHLIGHT SECTION TITLE- END------------------------------- */
@@ -878,8 +877,8 @@ width: auto!important;
 
 /*-------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - START --------------------------------
 .wfDiagram > div > div[selected='blue'] {
-border: 2px solid var(--SKFRoyalBlue);
-background-color: var(--SKFRoyalBlue);
+border: 2px solid var(--ILXNavy);
+background-color: var(--ILXNavy);
 color: var(--SKFWhite);
 }
 ------------------------------- HIGHLIGHT WORKFLOW BUTTON IN PROGRESS - END -------------------------------- */
@@ -900,7 +899,7 @@ text-align: center;
 padding: 6px 2px;
 font-weight: bold;
 border-radius: 8px;
-border: 2px solid var(--SKFRoyalBlue);
+border: 2px solid var(--ILXNavy);
 background-color: var(--SKFWhite);
 color: var(--SKFBlack);
 }
@@ -908,13 +907,13 @@ color: var(--SKFBlack);
 
 
 .wfDiagram > div > div[selected='red'] {
-border: 2px solidvar(--SKFRoyalBlue)!important;
+border: 2px solidvar(--ILXNavy)!important;
 background-color: var(--SKFRed)!important;
 color: var(--SKFWhite)!important;
 }
 
 .wfDiagram > div > div[selected='green'] {
-border: 2px solid var(--SKFRoyalBlue)!important;
+border: 2px solid var(--ILXNavy)!important;
 background-color: var(--SKFGreen)!important;
 color: var(--SKFWhite)!important;
 }
@@ -934,7 +933,7 @@ text-align:center;
 -----------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
 /*--------------------------------Workflow PR/DD Fields ---------------------------------- */
 .workflow-status-area span {
-color: var(--SKFRoyalBlue); !important;
+color: var(--ILXNavy); !important;
 font-family: "Open Sans", sans-serif;
 font-size: 13px;
 font-weight: normal;
@@ -1047,7 +1046,7 @@ line-height: 18px;
 }
 
 a#id-446a270b-61d2-4599-b3ef-645d81f4f89c, a#id-22dec4e3-0d93-4586-ae59-9f6e502d5952, a#id-d1bad224-6908-4ff1-a130-01dc2a83eae8, a#id-77ab742f-dc51-41b7-a34b-31e98722ace0 {
-color: var(--SKFRoyalBlue);
+color: var(--ILXNavy);
 }
 
 
@@ -1062,7 +1061,7 @@ font-size: 16px;
 div.instructions
 {
 background-color: var(--SKFInstructions);
-border-left: solid 4px var(--SKFRoyalBlue);
+border-left: solid 4px var(--ILXNavy);
 line-height: 18px;
 overflow: hidden;
 padding: 12px;
@@ -1071,7 +1070,7 @@ padding: 12px;
 
 /*--------------------------------HyperLink on Inventory View colour ---------------------------------- */
 .inventory-row td.data-cell a, .map-wrapper td.data-cell a, .detpage .inventory-row td.data-cell a {
-color: var(--SKFRoyalBlue)!important;
+color: var(--ILXNavy)!important;
 font-family: "Open Sans", sans-serif;
 font-size: 1em;
 font-weight: 600;
@@ -1081,13 +1080,13 @@ text-decoration: none;
 
 /*--------------------------------Hyperlinks ---------------------------------- */
 .det-sec a:hover {
-color: var(--SKFRoyalBlue); !important;
+color: var(--ILXNavy); !important;
 background-color: var(--SKFYellow)!important;
 text-decoration: none;
 }
 
 .det-sec a {
-color: var(--SKFRoyalBlue); 
+color: var(--ILXNavy); 
    font-family: "Open Sans", sans-serif;
 font-size: 14px;
 font-weight: normal;
@@ -1103,7 +1102,7 @@ content: "" !important; }
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='%23004C8F'%3E%3Cpath d='M12.1529 12.9997C12.7134 12.9997 13.1932 12.8001 13.5924 12.401C13.9915 12.0018 14.1911 11.522 14.1911 10.9615C14.1911 10.401 13.9915 9.92112 13.5924 9.52197C13.1932 9.12282 12.7134 8.92324 12.1529 8.92324C11.5924 8.92324 11.1125 9.12282 10.7134 9.52197C10.3142 9.92112 10.1146 10.401 10.1146 10.9615C10.1146 11.522 10.3142 12.0018 10.7134 12.401C11.1125 12.8001 11.5924 12.9997 12.1529 12.9997ZM12.1529 20.4901C14.2251 18.5878 15.7622 16.8595 16.7643 15.3054C17.7665 13.7513 18.2675 12.3712 18.2675 11.1653C18.2675 9.3139 17.6773 7.79798 16.4968 6.61751C15.3163 5.43704 13.8684 4.84681 12.1529 4.84681C10.4374 4.84681 8.98938 5.43704 7.80892 6.61751C6.62845 7.79798 6.03822 9.3139 6.03822 11.1653C6.03822 12.3712 6.53928 13.7513 7.5414 15.3054C8.54352 16.8595 10.0807 18.5878 12.1529 20.4901ZM12.1529 22.8086C12.017 22.8086 11.8811 22.7831 11.7452 22.7322C11.6093 22.6812 11.4904 22.6133 11.3885 22.5283C8.9087 20.3373 7.05733 18.3033 5.8344 16.4264C4.61146 14.5496 4 12.7959 4 11.1653C4 8.61751 4.81953 6.58779 6.4586 5.07611C8.09766 3.56443 9.99575 2.80859 12.1529 2.80859C14.31 2.80859 16.2081 3.56443 17.8471 5.07611C19.4862 6.58779 20.3057 8.61751 20.3057 11.1653C20.3057 12.7959 19.6943 14.5496 18.4713 16.4264C17.2484 18.3033 15.397 20.3373 12.9172 22.5283C12.8153 22.6133 12.6964 22.6812 12.5605 22.7322C12.4246 22.7831 12.2887 22.8086 12.1529 22.8086Z' fill='%23%23004C8F'/%3E%3C/svg%3E%0A") no-repeat;
 background-position: left 5px;
 font-weight: 400;
-color: var(--SKFRoyalBlue) ;
+color: var(--ILXNavy) ;
 font-size: 16px;
 font-family: "Open Sans", sans-serif;
 padding: 0px; }
@@ -1146,7 +1145,7 @@ margin-top: 5px; }
 
 #ufd-prerendered input {
 width: 116px !important;
-color: var(--SKFRoyalBlue) ;
+color: var(--ILXNavy) ;
 font-family: "Open Sans", sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -1226,7 +1225,7 @@ background-position: right !important; }
 
 #application-dropdown .appdropdown-title span {
 width: 150px;
-color:var(--SKFRoyalBlue) ;
+color:var(--ILXNavy) ;
 font-size: 16px;
 font-weight: 400;
 background-color: inherit; }
@@ -1260,14 +1259,14 @@ width: 100%;
 display: block;
 margin-bottom: 15px;
 position: relative;
-border: 1px solidvar(--SKFRoyalBlue) ;
+border: 1px solidvar(--ILXNavy) ;
 border-radius: 32px;
 box-sizing: border-box;
 font-size: 16px;
 font-family: "Open Sans", sans-serif; }
 
 #application-dropdown .appdropdown-dropdown input.appdropdown-searchbar:focus {
-border-color: var(--SKFRoyalBlue) ; }
+border-color: var(--ILXNavy) ; }
 
 #application-dropdown .appdropdown-title #app-down-arrow {
 display: none !important; }
