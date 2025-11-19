@@ -15,6 +15,17 @@
 --ILXLightGrey: #bdc3c7; 
  --ILXBlack: #262626;  
 }
+
+
+gridCreateLink {
+    color:  var(--SKFWhite) !important;
+    background-color:  var(--ILXNavy)  !important;
+    border-color: var(--ILXNavy)  !important;
+}
+
+
+
+
 /*--------------------------------Merge Template Button ---------------------------------- */
 .detpage .menu-action-links .mtLinkContainer,
  
