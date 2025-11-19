@@ -15,17 +15,22 @@
 --ILXLightGrey: #bdc3c7; 
  --ILXBlack: #262626;  
 }
+.grid-action-links .gridCreateLink
+{
 
-.gridCreateLink:hover, 
-.grid-action-links .gridAttachLink:hover,
-.createNewTaskLink:hover, 
-.gridCreateLink:hover, .
-.addEntryLink:hover,  
-#save_action_link:hover {
-    color: var(--ILXNavy);
-    text-decoration: none;
+    color: var(--SKFWhite)!important;
+    font-size: 15px;
+    background-image: none !important;
+    background-color: var(--SKFWhite)!important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid var(--ILXNavy)!important;
+    border-radius: 20px;
+    padding: 8px 10px !important;
+    gap: 5px;	
 }
-
 
 /*--------------------------------Add Entry Icons ---------------------------------- */
 a.gridCreateLink::before, 
