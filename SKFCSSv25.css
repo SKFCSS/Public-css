@@ -16,6 +16,34 @@
  --ILXBlack: #262626;  
 }
 
+
+
+a.gridCreateLink,
+a.createNewTaskLink,
+a.gridLinkBuilder,
+.gridCreateLink,
+.createNewTaskLink,
+.gridLinkBuilder,
+.ui-widget-content a.gridCreateLink {
+    color:  var(--SKFWhite);
+    background-color:  var(--ILXNavy);
+    border-color: var(--ILXNavy);
+}
+
+
+a.gridCreateLink:hover,
+a.createNewTaskLink:hover,
+a.gridLinkBuilder:hover,
+.gridCreateLink:hover,
+.createNewTaskLink:hover,
+.gridLinkBuilder:hover,
+.ui-widget-content a.gridCreateLink :hover {
+   background-color: var(--button-hover-color);
+    color: var(--ILXNavy);
+    border-color: var(--ILXNavy);
+}
+
+/*--------------------------------Add Entry Icons ---------------------------------- */
 a.gridCreateLink::before, 
 a.createNewTaskLink::before, 
 a.gridLinkBuilder::before, 
