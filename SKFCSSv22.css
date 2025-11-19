@@ -219,25 +219,7 @@ table.links {
     font-weight: normal;
 }
 
-a.gridCreateLink,
-a.createNewTaskLink,
-a.gridLinkBuilder,
-.gridCreateLink,
-.createNewTaskLink,
-.gridLinkBuilder,
-.ui-widget-content a.gridCreateLink {
-    color:  var(--SKFWhite);
-    background-color:  var(--ILXNavy);
-    border-color: var(--ILXNavy);
-}
 
-a.gridCreateLink::before, 
-a.createNewTaskLink::before, 
-a.gridLinkBuilder::before, 
-.ui-widget-content a.gridCreateLink::before {
-    content: "\f067"; /* fa-plus-circle */
-    color: var(--SKFWhite); !important;
-}
 
 a.gridDeleteLink,
 a.gridDetachLink,
