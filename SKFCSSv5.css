@@ -20,7 +20,9 @@
 
 /*--------------------------------BUTTONS START---------------------------------- */
 
-.inventory-actions .dropdown_text , .grid-action-links a{
+.inventory-actions,
+.dropdown_text , 
+.grid-action-links a{
     color:  var(--ILXNavy);
     font-size: 15px;
     background-image: none !important;
