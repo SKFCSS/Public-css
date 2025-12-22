@@ -21,7 +21,13 @@
   color: var(--ILXNavy)!important;
 }
 
-
+.det-sec a {
+    color: var(--ILXNavy);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: BOLD;
+    text-decoration: none;
+}
 .gridCreateMultiLink::before {
 content: '\f0c5';
 font-family: 'FontAwesome';
