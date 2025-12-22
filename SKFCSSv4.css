@@ -21,6 +21,16 @@
   color: var(--ILXNavy)!important;
 }
 
+
+.gridCreateMultiLink::before {
+content: '\f0c5';
+font-family: 'FontAwesome';
+font-weight: BOLD;
+margin-right: 5px;
+font-size: 16px;
+}
+
+
 /*--------------------------------Add Entry Buttons ---------------------------------- */
 .grid-action-links .gridCreateLink,
 .detpage .menu-action-links .addEntryLink 
