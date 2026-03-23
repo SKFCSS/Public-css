@@ -578,7 +578,7 @@ background-color: var(--SKFYellow);
     min-height: 16px;
 display: flex;
 flex-direction: row;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 align-items: center;
 }
 
