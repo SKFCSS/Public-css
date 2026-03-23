@@ -18,8 +18,11 @@
 input[type="checkbox"] {
   width: 20px;       /* Change size */
   height: 20px;
-  accent-color: teal; /* Modern way to change check color */
+ accent-color: var(--ILXNavy); /* checkmark color */
+  border: 2px solid var(--ILXNavy); /* border around checkbox */
+  border-radius: 0px; /* optional, slightly rounded corners */
   cursor: pointer;
+  background-color: white; /* optional, to keep the inside white when unchecked */
 }
 #save_action_link {
     background-image: url(../images/Save.png);
