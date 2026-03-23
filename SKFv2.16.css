@@ -30,12 +30,12 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 
   border: 2px solid var(--ILXNavy); /* always ILXNavy */
   border-radius: 0; /* square border */
-  background-color: #ffffff; /* default background */
+  background-color: var(--SKFWhite); /* default background */
 
   cursor: pointer;             
   display: inline-block;
@@ -73,7 +73,7 @@
 .detpage .group .group-item input[type=checkbox]:checked::after,
 .detpage .fieldarea-field input[type=checkbox]:checked::after,
 .detpage .fieldarea-caption input[type=checkbox]:checked::after {
-  border-color: #ffffff; /* tick turns white when checked */
+  border-color: var(--SKFWhite); /* tick turns white when checked */
   opacity: 1;
 }
 
