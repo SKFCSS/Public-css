@@ -18,7 +18,8 @@
 
 
 /* =========================
-   ILX/ SKF Styled Checkbox SVG
+   ILX/ SKF Styled Square Checkbox
+   Border always ILXNavy
 ========================= */
 
 /* Base checkboxes */
@@ -32,14 +33,15 @@
   width: 22px;
   height: 22px;
 
-  border: 2px solid var(--ILXNavy);
-  background-color: #ffffff; /* Default background */
+  border: 2px solid var(--ILXNavy); /* always ILXNavy */
+  border-radius: 0; /* square border */
+  background-color: #ffffff; /* default background */
 
   cursor: pointer;             
   display: inline-block;
   position: relative;
 
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 /* Hover */
@@ -47,6 +49,7 @@
 .detpage .fieldarea-field input[type=checkbox]:hover,
 .detpage .fieldarea-caption input[type=checkbox]:hover {
   background-color: var(--SKFYellow);
+  border-color: var(--ILXNavy); /* ✅ keep border always ILXNavy */
 }
 
 /* Tick using pseudo-element */
@@ -59,18 +62,18 @@
   left: 50%;
   width: 5px;
   height: 10px;
-  border: solid var(--ILXNavy);
+  border: solid var(--ILXNavy); /* default tick color */
   border-width: 0 2px 2px 0;
   transform: translate(-50%, -50%) rotate(45deg);
   opacity: 0; /* hidden when unchecked */
   transition: all 0.2s ease;
 }
 
-/* Checked state */
+/* Checked tick */
 .detpage .group .group-item input[type=checkbox]:checked::after,
 .detpage .fieldarea-field input[type=checkbox]:checked::after,
 .detpage .fieldarea-caption input[type=checkbox]:checked::after {
-  border-color: #ffffff; /* white tick when checked */
+  border-color: #ffffff; /* tick turns white when checked */
   opacity: 1;
 }
 
@@ -79,7 +82,7 @@
 .detpage .fieldarea-field input[type=checkbox]:checked,
 .detpage .fieldarea-caption input[type=checkbox]:checked {
   background-color: var(--ILXNavy);
-  border-color: var(--ILXNavy);
+  border-color: var(--ILXNavy); /* border stays ILXNavy */
 }
 
 /* Focus (accessibility) */
