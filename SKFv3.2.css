@@ -15,7 +15,12 @@
 --ILXLightGrey: #bdc3c7; 
  --ILXBlack: #262626;  
 }
-
+input[type="checkbox"] {
+  width: 20px;       /* Change size */
+  height: 20px;
+  accent-color: teal; /* Modern way to change check color */
+  cursor: pointer;
+}
 #save_action_link {
     background-image: url(../images/Save.png);
   color: var(--ILXNavy)!important;
