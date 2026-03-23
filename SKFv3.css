@@ -16,92 +16,6 @@
  --ILXBlack: #262626;  
 }
 
-
-/* =========================
-   ILX/ SKF Styled Square Checkbox
-   Border always ILXNavy
-========================= */
-
-/* Base checkboxes */
-.detpage .group .group-item input[type=checkbox],
-.detpage .fieldarea-field input[type=checkbox],
-.detpage .fieldarea-caption input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  width: 24px;
-  height: 24px;
-
-  border: 2px solid var(--ILXNavy); /* always ILXNavy */
-  border-radius: 0; /* square border */
-  background-color: var(--SKFWhite); /* default background */
-
-  cursor: pointer;             
-  display: inline-block;
-  position: relative;
-
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Hover */
-.detpage .group .group-item input[type=checkbox]:hover,
-.detpage .fieldarea-field input[type=checkbox]:hover,
-.detpage .fieldarea-caption input[type=checkbox]:hover {
-  background-color: var(--SKFYellow);
-  border-color: var(--ILXNavy); /* ✅ keep border always ILXNavy */
-}
-
-/* Tick using pseudo-element */
-.detpage .group .group-item input[type=checkbox]::after,
-.detpage .fieldarea-field input[type=checkbox]::after,
-.detpage .fieldarea-caption input[type=checkbox]::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 10px;
-  border: solid var(--ILXNavy); /* default tick color */
-  border-width: 0 2px 2px 0;
-  transform: translate(-50%, -50%) rotate(45deg);
-  opacity: 0; /* hidden when unchecked */
-  transition: all 0.2s ease;
-}
-
-/* Checked tick */
-.detpage .group .group-item input[type=checkbox]:checked::after,
-.detpage .fieldarea-field input[type=checkbox]:checked::after,
-.detpage .fieldarea-caption input[type=checkbox]:checked::after {
-  border-color: var(--SKFWhite); /* tick turns white when checked */
-  opacity: 1;
-}
-
-/* Checked background */
-.detpage .group .group-item input[type=checkbox]:checked,
-.detpage .fieldarea-field input[type=checkbox]:checked,
-.detpage .fieldarea-caption input[type=checkbox]:checked {
-  background-color: var(--ILXNavy);
-  border-color: var(--ILXNavy); /* border stays ILXNavy */
-}
-
-/* Focus (accessibility) */
-.detpage .group .group-item input[type=checkbox]:focus,
-.detpage .fieldarea-field input[type=checkbox]:focus,
-.detpage .fieldarea-caption input[type=checkbox]:focus {
-  outline: 2px solid var(--SKFYellow);
-  outline-offset: 2px;
-}
-
-/* Disabled */
-.detpage .group .group-item input[type=checkbox]:disabled,
-.detpage .fieldarea-field input[type=checkbox]:disabled,
-.detpage .fieldarea-caption input[type=checkbox]:disabled {
-  background-color: #e0e0e0;
-  border-color: #b2b2b2;
-  cursor: not-allowed;
-}
-/*-------------------------------- ---------------------------------- */
 #save_action_link {
     background-image: url(../images/Save.png);
   color: var(--ILXNavy)!important;
@@ -149,7 +63,7 @@ a.createNewTaskLink::before,
 a.gridLinkBuilder::before, 
 .ui-widget-content a.gridCreateLink::before {
     content: "\f067"; /* fa-plus-circle */
-    color: var(--SKFWhite) !important;
+    color: var(--SKFWhite); !important;
 }
 
 
@@ -195,7 +109,7 @@ a.gridLinkBuilder::before,
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    border: 2px solid var(--ILXNavy) !important;
+    border: 2px solid var(--ILXNavy); !important;
     border-radius: 20px;
     padding: 8px 10px !important;
     gap: 5px;
@@ -292,9 +206,7 @@ table.links {
     font-size: 20px;
 }
 
-.detpage .menu-action-links a.archiveLink,
-.systemLink.gridArchiveLink,
-.systemLink.gridDeleteLink{
+.detpage .menu-action-links a.archiveLink, systemLink gridArchiveLink, systemLink gridDeleteLink {
     color:  var(--SKFRed)!important;
     border-color: var(--SKFRed)!important;
 }
@@ -394,7 +306,7 @@ a.grid-attach-link,
 a.gridSampleMergeTemplateLink,
 a.gridUploadMergeLink {
     color: var(--ILXNavy);!important;
-    border-color: var(--ILXNavy) !important;
+    border-color: var(--ILXNavy); !important;
     background-color: var(--SKFWhite);
 }
 
@@ -443,7 +355,7 @@ Specificity: (0,2,2)
     height: 28px!important;
     width: 100%!important;
     padding: 0 25px 0 10px!important;
-    color: var(--ILXLightGrey) !important;
+    color: var(--ILXLightGrey); !important;
     font-family: "Open Sans", sans-serif!important;
     font-size: 11px !important;
     font-weight: 400 !important;
@@ -488,7 +400,7 @@ color: var(--SKFBlack);
 
 /*--------------------------------Inventory Row Text ---------------------------------- */
 .inventory-row td.data-cell, .map-wrapper td.data-cell, .detpage .inventory-row td.data-cell {
-color: var(--SKFBlack) !important;
+color: var(--SKFBlack); !important;
 font-family: "Open Sans", sans-serif;
 font-size: 12px;
 font-weight: normal;
@@ -497,7 +409,7 @@ padding: 10px;
 }
 /*--------------------------------Header Inventory Columns ---------------------------------- */
 div.dropdown_container a {
-color: var(--SKFBlack) !important;
+color: var(--SKFBlack); !important;
 font-family: "Open Sans", sans-serif;
 font-size: 12px;
 font-weight: 600;
@@ -634,7 +546,14 @@ background-color: var(--SKFYellow);
     margin-right: 8px;
 }
 
-
+.fieldarea-field input[type="text"], ,
+.fieldarea-field input[type="checkbox"] {
+width: 30px;
+height: 30px;
+}{
+    height: unset!important;
+    line-height: unset!important;
+}
 
 .detpage .fieldarea-caption .caption-wrapper {
     min-height: unset !important;
@@ -644,7 +563,7 @@ background-color: var(--SKFYellow);
 .fieldarea-field > div,
 .entitySelectorGroup > div {
   padding: 8px;
-    background-color:var(--SKFLightGrey);
+    background-color:var(--LightGrey);
     width: 100%;
     min-height: 16px;
 display: flex;
@@ -717,6 +636,23 @@ width: 80% !important;
 }
 
 
+
+.detpage .group .group-item input[type=checkbox],
+.detpage .fieldarea-field input[type=checkbox],
+.detpage .fieldarea-caption input[type=checkbox] {
+  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27%3E%3Cpath d=%27M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z%27 fill=%27%23004C8F%27/%3E%3C/svg%3E") no-repeat;
+   width: 30px ;
+  height: 30px ;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.detpage .group .group-item input[type=checkbox]:checked,
+.detpage .fieldarea-field input[type=checkbox]:checked,
+.detpage .fieldarea-caption input[type=checkbox]:checked {
+  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27%3E%3Cpath d=%27M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z%27 fill=%27%23004C8F%27/%3E%3C/svg%3E") no-repeat;
+}
 /* -------------------------FIELD AREA - END-------------------------------*/
 
 
@@ -881,7 +817,7 @@ li.tabs-section {
 
 
 background-color: var(--SKFWhite) !important;
-border: 1px solidvar(--SKFBlack) !important;
+border: 1px solidvar(--SKFBlack)!important;
 height: 36px;
 display: flex;
 align-items: center;
@@ -893,7 +829,7 @@ li.ui-tabs-active {
 
 top: 1px !important;
 background-color: var(--SKFWhite)!important;
-border-top: var(--SKFBlack) 3px solid !important;
+border-top: #var(--SKFBlack) 3px solid !important;
 }
 
 .content>.secbase,
@@ -1036,7 +972,7 @@ text-align:center;
 -----------------------------ADDS SPACE WHEN WF DIAGRAM FLOATS - END--------------------------------*/
 /*--------------------------------Workflow PR/DD Fields ---------------------------------- */
 .workflow-status-area span {
-color: var(--ILXNavy) !important;
+color: var(--ILXNavy); !important;
 font-family: "Open Sans", sans-serif;
 font-size: 13px;
 font-weight: normal;
@@ -1177,7 +1113,7 @@ text-decoration: none;
 
 /*--------------------------------Hyperlinks ---------------------------------- */
 .det-sec a:hover {
-color: var(--ILXNavy) !important;
+color: var(--ILXNavy); !important;
 background-color: var(--SKFYellow)!important;
 text-decoration: none;
 }
