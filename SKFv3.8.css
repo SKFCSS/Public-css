@@ -15,7 +15,7 @@
 --ILXLightGrey: #bdc3c7; 
  --ILXBlack: #262626;  
 }
-input[type="checkbox"] {
+input[type="checkbox"], .detpage input[type=radio] {
   width: 20px;       /* Change size */
   height: 20px;
  accent-color: var(--ILXNavy); /* checkmark color */
@@ -23,7 +23,7 @@ input[type="checkbox"] {
   border-radius: 0px; /* optional, slightly rounded corners */
   cursor: pointer;
   background-color: white; /* optional, to keep the inside white when unchecked */
-	
+margin:	 8px;
 }
 #save_action_link {
     background-image: url(../images/Save.png);
