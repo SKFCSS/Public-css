@@ -546,14 +546,7 @@ background-color: var(--SKFYellow);
     margin-right: 8px;
 }
 
-.fieldarea-field input[type="text"], ,
-.fieldarea-field input[type="checkbox"] {
-width: 30px;
-height: 30px;
-}{
-    height: unset!important;
-    line-height: unset!important;
-}
+
 
 .detpage .fieldarea-caption .caption-wrapper {
     min-height: unset !important;
@@ -637,22 +630,7 @@ width: 80% !important;
 
 
 
-.detpage .group .group-item input[type=checkbox],
-.detpage .fieldarea-field input[type=checkbox],
-.detpage .fieldarea-caption input[type=checkbox] {
-  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27%3E%3Cpath d=%27M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z%27 fill=%27%23004C8F%27/%3E%3C/svg%3E") no-repeat;
-   width: 30px ;
-  height: 30px ;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
 
-.detpage .group .group-item input[type=checkbox]:checked,
-.detpage .fieldarea-field input[type=checkbox]:checked,
-.detpage .fieldarea-caption input[type=checkbox]:checked {
-  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27%3E%3Cpath d=%27M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z%27 fill=%27%23004C8F%27/%3E%3C/svg%3E") no-repeat;
-}
 /* -------------------------FIELD AREA - END-------------------------------*/
 
 
