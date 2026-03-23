@@ -630,66 +630,47 @@ width: 80% !important;
   font-size: 14px;
 }
 
-/* =========================
-   SKF CHECKBOX (COMPLETE)
-========================= */
 
-input[type="checkbox"] {
+.detpage input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
 
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 
   border: 2px solid #004c8f;
   border-radius: 4px;
-  background-color: #ffffff;
+  background: #ffffff;
 
   cursor: pointer;
   position: relative;
-
-  transition: all 0.2s ease;
 }
 
 /* Hover */
-input[type="checkbox"]:hover {
-  background-color: #fdf6bf;
+.detpage input[type="checkbox"]:hover {
+  background-color: var(--ILXNavy);
 }
 
 /* Checked */
-input[type="checkbox"]:checked {
-  background-color: #004c8f;
-  border-color: #004c8f;
+.detpage input[type="checkbox"]:checked {
+  background-color: var(--ILXNavy);
 }
 
 /* Tick */
-input[type="checkbox"]:checked::after {
+.detpage input[type="checkbox"]:checked::after {
   content: "";
   position: absolute;
 
-  left: 6px;
-  top: 2px;
+  left: 7px;
+  top: 3px;
 
-  width: 5px;
-  height: 10px;
+  width: 6px;
+  height: 12px;
 
   border: solid #ffffff;
   border-width: 0 2px 2px 0;
 
   transform: rotate(45deg);
-}
-
-/* Focus (accessibility) */
-input[type="checkbox"]:focus {
-  outline: 2px solid #fdf6bf;
-  outline-offset: 2px;
-}
-
-/* Disabled */
-input[type="checkbox"]:disabled {
-  background-color: #e0e0e0;
-  border-color: #b2b2b2;
-  cursor: not-allowed;
 }
 
 /* -------------------------FIELD AREA - END-------------------------------*/
