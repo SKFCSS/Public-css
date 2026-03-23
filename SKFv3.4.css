@@ -23,7 +23,7 @@ input[type="checkbox"] {
   border-radius: 0px; /* optional, slightly rounded corners */
   cursor: pointer;
   background-color: white; /* optional, to keep the inside white when unchecked */
-	margin: 5px; /* small buffer outside the checkbox */
+	margin-left: 5px; !important; /* small buffer outside the checkbox */
 }
 #save_action_link {
     background-image: url(../images/Save.png);
