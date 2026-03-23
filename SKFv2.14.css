@@ -16,39 +16,43 @@
  --ILXBlack: #262626;  
 }
 
+
 /* =========================
-   ILX/ SKF Styled Checkbox
+   ILX/ SKF Styled Checkbox SVG
 ========================= */
 
-/* Scope to your page */
-.detpage input[type="checkbox"] {
+/* Base checkboxes */
+.detpage .group .group-item input[type=checkbox],
+.detpage .fieldarea-field input[type=checkbox],
+.detpage .fieldarea-caption input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 
   width: 22px;
   height: 22px;
 
   border: 2px solid var(--ILXNavy);
-  background-color:var(--SKFWhite);
+  background-color: #ffffff; /* Default background */
 
-  cursor: pointer;
+  cursor: pointer;             
+  display: inline-block;
   position: relative;
+
   transition: all 0.2s ease;
 }
 
-/* Hover state */
-.detpage input[type="checkbox"]:hover {
+/* Hover */
+.detpage .group .group-item input[type=checkbox]:hover,
+.detpage .fieldarea-field input[type=checkbox]:hover,
+.detpage .fieldarea-caption input[type=checkbox]:hover {
   background-color: var(--SKFYellow);
 }
 
-/* Checked state */
-.detpage input[type="checkbox"]:checked {
-  background-color: var(--ILXNavy);
-  border-color: var(--ILXNavy);
-}
-
-/* Tick */
-.detpage input[type="checkbox"]::after {
+/* Tick using pseudo-element */
+.detpage .group .group-item input[type=checkbox]::after,
+.detpage .fieldarea-field input[type=checkbox]::after,
+.detpage .fieldarea-caption input[type=checkbox]::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -58,32 +62,43 @@
   border: solid var(--ILXNavy);
   border-width: 0 2px 2px 0;
   transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0; /* hidden when unchecked */
   transition: all 0.2s ease;
 }
 
-/* Checked tick should be white */
-.detpage input[type="checkbox"]:checked::after {
-  border-color: var(--SKFWhite);
+/* Checked state */
+.detpage .group .group-item input[type=checkbox]:checked::after,
+.detpage .fieldarea-field input[type=checkbox]:checked::after,
+.detpage .fieldarea-caption input[type=checkbox]:checked::after {
+  border-color: #ffffff; /* white tick when checked */
+  opacity: 1;
+}
+
+/* Checked background */
+.detpage .group .group-item input[type=checkbox]:checked,
+.detpage .fieldarea-field input[type=checkbox]:checked,
+.detpage .fieldarea-caption input[type=checkbox]:checked {
+  background-color: var(--ILXNavy);
+  border-color: var(--ILXNavy);
 }
 
 /* Focus (accessibility) */
-.detpage input[type="checkbox"]:focus {
+.detpage .group .group-item input[type=checkbox]:focus,
+.detpage .fieldarea-field input[type=checkbox]:focus,
+.detpage .fieldarea-caption input[type=checkbox]:focus {
   outline: 2px solid var(--SKFYellow);
   outline-offset: 2px;
 }
 
-/* Disabled state */
-.detpage input[type="checkbox"]:disabled {
+/* Disabled */
+.detpage .group .group-item input[type=checkbox]:disabled,
+.detpage .fieldarea-field input[type=checkbox]:disabled,
+.detpage .fieldarea-caption input[type=checkbox]:disabled {
   background-color: #e0e0e0;
   border-color: #b2b2b2;
   cursor: not-allowed;
 }
-/* =========================
-  CLOSE  ILX/ SKF Styled Checkbox
-========================= */
-
-
-
+/*-------------------------------- ---------------------------------- */
 #save_action_link {
     background-image: url(../images/Save.png);
   color: var(--ILXNavy)!important;
@@ -697,7 +712,6 @@ width: 80% !important;
   color: #222222;
   font-size: 14px;
 }
-
 
 
 /* -------------------------FIELD AREA - END-------------------------------*/
